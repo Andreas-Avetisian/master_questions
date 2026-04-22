@@ -1,0 +1,175 @@
+:root {
+  --bg: #ffffff;
+  --fg: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #2563eb;
+  --accent-fg: #ffffff;
+  --danger: #dc2626;
+  --warn: #d97706;
+  --ok: #059669;
+  --easy: #0284c7;
+  --card-bg: #f9fafb;
+  --code-bg: #f3f4f6;
+  --radius: 10px;
+  --maxw: 780px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0e14;
+    --fg: #e5e7eb;
+    --muted: #9ca3af;
+    --border: #1f2937;
+    --accent: #3b82f6;
+    --card-bg: #111827;
+    --code-bg: #1f2937;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+button {
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+}
+button:hover { border-color: var(--accent); }
+button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button[disabled] { opacity: 0.5; cursor: not-allowed; }
+
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.nav a { color: var(--fg); padding: 0.25rem 0.5rem; border-radius: 6px; }
+.nav a[aria-current="page"] { background: var(--accent); color: var(--accent-fg); }
+.nav .spacer { flex: 1; }
+.nav .badge {
+  display: inline-block;
+  min-width: 1.4em;
+  padding: 0.1em 0.5em;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.muted { color: var(--muted); }
+
+.badge-pill {
+  display: inline-block;
+  padding: 0.1em 0.55em;
+  border-radius: 999px;
+  background: var(--border);
+  color: var(--fg);
+  font-size: 0.8em;
+  margin-right: 0.3em;
+}
+.badge-empty {
+  background: var(--warn);
+  color: white;
+}
+
+.grade-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.grade-bar button { padding: 0.75rem 0.5rem; text-align: center; line-height: 1.2; }
+.grade-bar button .key { display: block; font-size: 0.75em; color: var(--muted); }
+.grade-bar .again { border-color: var(--danger); }
+.grade-bar .again:hover { background: var(--danger); color: white; }
+.grade-bar .hard { border-color: var(--warn); }
+.grade-bar .hard:hover { background: var(--warn); color: white; }
+.grade-bar .good { border-color: var(--ok); }
+.grade-bar .good:hover { background: var(--ok); color: white; }
+.grade-bar .easy { border-color: var(--easy); }
+.grade-bar .easy:hover { background: var(--easy); color: white; }
+
+.question-h1 { font-size: 1.4rem; margin: 0.5rem 0 1rem; }
+
+.answer :is(h1,h2,h3) { margin-top: 1.5rem; }
+.answer pre {
+  background: var(--code-bg);
+  padding: 0.75rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+.answer code {
+  background: var(--code-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+.answer pre code { padding: 0; background: transparent; }
+.answer img { max-width: 100%; height: auto; border-radius: 6px; }
+.answer blockquote {
+  border-left: 3px solid var(--border);
+  margin: 0.75em 0;
+  padding: 0.25em 1em;
+  color: var(--muted);
+}
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.filter-row button[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+
+.q-list { list-style: none; padding: 0; margin: 0; }
+.q-list li {
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+.q-list li:hover { background: var(--card-bg); }
+.q-list .qid { font-variant-numeric: tabular-nums; color: var(--muted); min-width: 2.5rem; }
+
+.kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+  background: var(--code-bg);
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}

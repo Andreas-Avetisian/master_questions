@@ -1,4 +1,7 @@
 node_modules/
 exporter/node_modules/
+web/node_modules/
+web/.svelte-kit/
+web/build/
 *.log
 .DS_Store

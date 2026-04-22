@@ -1,0 +1,32 @@
+# Production compose for megabox Dockge stack.
+#
+# Deploy path: /mnt/user/appdata/dockge/stacks/pocketbase/compose.yaml
+# Data volume: /mnt/user/appdata/pocketbase/pb_data
+# Migrations:  /mnt/user/appdata/pocketbase/pb_migrations (copied from repo)
+#
+# Tailnet static IP 172.22.0.12 (verified free against `docker network inspect tailnet`).
+# satelite NPM will proxy study-api.qtq.at -> 172.22.0.12:8090.
+
+services:
+  pocketbase:
+    image: ghcr.io/muchobien/pocketbase:0.23
+    container_name: pocketbase
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Vienna
+    volumes:
+      - /mnt/user/appdata/pocketbase/pb_data:/pb_data
+      - /mnt/user/appdata/pocketbase/pb_migrations:/pb_migrations:ro
+      - /mnt/user/appdata/pocketbase/pb_hooks:/pb_hooks:ro
+    networks:
+      tailnet:
+        ipv4_address: 172.22.0.12
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8090/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+networks:
+  tailnet:
+    external: true

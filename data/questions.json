@@ -1,0 +1,1262 @@
+{
+  "version": 1,
+  "generatedAt": "2026-04-22T11:05:14.899Z",
+  "questions": [
+    {
+      "qid": 1,
+      "courses": [
+        "MRI"
+      ],
+      "question": "Name the three research types and describe them. What is the difference between those three? Provide at least three examples for typical rough classifications between research fields. Explain theoretical and empirical work.",
+      "answer_markdown": "## Three research types\n\n- **Basic (fundamental) research:** expands the knowledge base and theories of a discipline, tests and refines them, and does **not** primarily pursue a concrete practical goal.\n- **Applied research:** expands and uses research results in order to solve a **specific practical problem**.\n- **Experimental development:** systematically applies existing knowledge to create **new or substantially improved** materials, devices, products, processes, or systems.\n\n## Difference Between The Three\n\nThe main difference is the **goal** of the work:\n\n- **Basic research** aims at new understanding.\n- **Applied research** aims at solving a practical problem.\n- **Experimental development** aims at building or improving a concrete solution.\n\nShort progression:\n\n`basic research -> applied research -> experimental development`\n\nIn practice, the boundaries are often **fluid** and depend on the research field and object.\n\n## Rough Classifications Of Research Fields\n\n- **Natural sciences:** research on animate and inanimate nature.\n  Example: physics, chemistry, biology.\n- **Humanities:** research on cultural and intellectual/spiritual subjects.\n  Example: history, philosophy, linguistics.\n- **Social sciences:** research on human social coexistence.\n  Example: sociology, political science, economics.\n- **Engineering sciences:** research on the development and construction of material products.\n  Example: mechanical engineering, civil engineering, electrical engineering.\n- **Structural / formal sciences:** research on immaterial systems and products created by humans.\n  Example: mathematics, logic, theoretical computer science.\n\nImportant: these are only **rough** classifications. Some cases are debatable, especially fields like **mathematics** and **computer science**.\n\n## Theoretical vs. Empirical Work\n\n- **Theoretical work:** answers a scientific question mainly by working with relevant literature, concepts, models, and theories.\n  Typical tasks: developing models, comparing theories, validating concepts theoretically.\n- **Empirical work:** answers a scientific question through **theory-based collection, analysis, and interpretation of data**.\n  Typical forms: case studies, surveys, observations, hypothesis testing.\n\n## Core Distinction To Remember\n\n- **Basic / applied / experimental development** classify research by its **purpose**.\n- **Theoretical / empirical** classify research by **how knowledge is generated**.\n\nSo:\n\n- **Theoretical** = knowledge mainly from conceptual/model-based work.\n- **Empirical** = knowledge mainly from observation, measurement, or collected data.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "MRI_20240916_Kieseberg.pdf",
+          "pages_raw": "4, 7-10, 12"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 2,
+      "courses": [
+        "MRI"
+      ],
+      "question": "Explain the following terms for research methods: Inductive, deductive, quantitative, qualitative, primary, secondary. Give three examples for combinations of at least two of these methods. Explain the issues with inductive and deductive methods.",
+      "answer_markdown": "The six terms form three pairs.\n\n**Inductive vs. deductive** (direction of reasoning)\n\n- **Inductive (bottom-up):** from many individual observations, a pattern is spotted, a hypothesis formulated, and a theory developed. Repeated observation raises the probability that the theory is true.\n- **Deductive (top-down):** start from a theory; derive hypotheses and predictions; confirm or refute them through many individual observations. A hypothesis that survives many refutation attempts becomes the currently accepted theory.\n\n**Quantitative vs. qualitative** (type of data)\n\n- **Quantitative:** numerical data, focus on measurements (statistics, experiments, structured surveys).\n- **Qualitative:** non-numerical, focus on meaning and depth (interviews, observations, focus groups).\n\n**Primary vs. secondary** (who collected the data)\n\n- **Primary:** data that do not yet exist are collected directly by the researcher for the specific investigation.\n- **Secondary:** existing data / surveys from other researchers are compiled, compared, reviewed and evaluated (e.g. studies, meta-studies).\n\n## Three example combinations\n\n1. **Qualitative + primary:** conducting new in-depth interviews with users of a banking app.\n2. **Quantitative + secondary:** a meta-analysis of published customer-satisfaction surveys.\n3. **Deductive + quantitative:** hypothesising \"feature X improves retention\" and testing it with an A/B experiment.\n\n## Issues\n\n**Induction:**\n- Are the observations truly independent?\n- Is the entire relevant spectrum covered, or only a biased slice?\n- Does bias enter the measurement?\n- Risk of confusing correlation with causality.\n\n**Deduction:**\n- Are the experiments meaningful for the hypothesis?\n- Is the researcher biasing the experiment through their own behaviour?\n- Are we really measuring what we claim to measure?",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "MRI_20240916_Kieseberg.pdf",
+          "pages_raw": ""
+        },
+        {
+          "file": "Methods_of_Research_and_Innovation_Kaltenbrunner.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 3,
+      "courses": [
+        "MRI"
+      ],
+      "question": "Name the general quality criteria for science from the MRI lecture and describe 5 of them in detail together with eventual problems discussed in the lecture.",
+      "answer_markdown": "## General quality criteria from the lecture\n\n- Honesty\n- Objectivity\n- Verifiability\n- Reliability\n- Validity\n- Comprehensibility\n- Relevance\n- Logical argumentation\n- Originality\n- Reproducibility\n\nPeer review is presented as an important safeguard, especially for verifiability, but not really as a separate quality criterion.\n\n## Five criteria in detail\n\n1. **Honesty:** Scientific work must present facts truthfully and must not misrepresent sources, methods, or results. The lecture explicitly mentions plagiarism, deliberate false statements, data manipulation, and falsification or invention of results.\n\n   Problems discussed: classic misconduct includes copying without attribution, changing data to fit a thesis, and inventing findings. These actions destroy trust in science and can have serious consequences for the author and for later research built on false results.\n\n2. **Objectivity:** Research should be as free as possible from prejudice, personal interests, and emotional bias. The scientist should argue neutrally and not simply side with a cause because it seems morally right.\n\n   Problems discussed: the lecture warns about hidden basic attitudes, emotional writing, implicit premises that are never justified, conclusions driven by the author's own interests, prejudicial judgement without evidence, and one-sided literature selection. Related examples of \"scientific lies\" include cherry-picking data points, participants, or methods.\n\n3. **Verifiability:** Scientific claims must be checkable by others. Results become more trustworthy when experts review them and when other researchers can examine and challenge them over time.\n\n   Problems discussed: verification fails when papers do not provide enough detail. The lecture stresses that all relevant details, logical steps, data, and materials or software must be available. A specific problem mentioned is poor data availability in many IT-security publications; sometimes data is only visible to reviewers, which limits later checking.\n\n4. **Reliability:** A method, instrument, or procedure is reliable if it produces stable and reproducible results. Reliability is therefore about consistency, not just about getting an appealing result once.\n\n   Problems discussed: reliability is threatened by fuzzy measured values, unstable algorithms, poor calibration, and poor maintenance of instruments or systems. Even if a result looks plausible, it is weak if the measurement process is not stable.\n\n5. **Validity:** Validity asks whether the study actually measures what it claims to measure. A method can be reliable but still invalid if it consistently measures the wrong thing.\n\n   Problems discussed: the lecture highlights confusion between correlation and causality, overly broad answer ranges in surveys, imprecise questions, non-representative samples, tendency of respondents toward mean values, and vaguely defined terms. All of these can make a study answer a different question than the intended one.\n\n## Short exam summary\n\nThe lecture names honesty, objectivity, verifiability, reliability, validity, comprehensibility, relevance, logical argumentation, originality, and reproducibility as general quality criteria for science. Five central criteria are honesty, objectivity, verifiability, reliability, and validity; their typical failure modes are misconduct and plagiarism, bias and one-sided argumentation, lack of transparency and missing data, unstable or poorly calibrated methods, and measuring the wrong construct or confusing correlation with causality.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "MRI_20240916_Kieseberg.pdf",
+          "pages_raw": "36-50"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 4,
+      "courses": [
+        "MRI"
+      ],
+      "question": "When do we need to create samples in market research? Please explain the difference between a full census and a partial survey and give an example for each of the two.",
+      "answer_markdown": "## When do we need a sample?\n\nBefore surveying anything, ask three questions:\n\n1. Do I even need a sample?\n2. If yes, how can it represent my basic population (representativity)?\n3. What is actually achievable?\n\nA sample is needed whenever surveying the entire basic population is impossible, too expensive, or too slow. If the population is small, accessible, and affordable to survey completely, a sample is not needed.\n\n> **Basic population:** the entirety of a group of market participants that can be considered as the object of investigation.\n\n## Full census vs. partial survey\n\n- **Full census:** all members of a real, statistical mass are included in the study.\n- **Partial survey:** only a certain number of units from the population are selected; the selected units form the **sample**.\n\n## Examples\n\n- **Full census — Example 1:** evaluating how satisfied the first-semester students of this master are with the \"Methods of Research and Innovation\" course. The population is small (a single cohort) and reachable, so everyone can be surveyed directly.\n- **Partial survey — Example 2:** evaluating how the population of Lower Austria thinks about AI safety. The population is too large to survey completely, so a representative sample is drawn instead.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Methods_of_Research_and_Innovation_Kaltenbrunner.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 5,
+      "courses": [
+        "MRI"
+      ],
+      "question": "What's the difference between non-random sampling methods and random sampling methods? Explain one non-random sampling method in more detail.",
+      "answer_markdown": "**Difference**\n\n- `Random sampling`: selection is based on chance. In a true random sample, each person in the population has the same chance of being selected.\n- `Non-random sampling`: people enter the sample because the researcher makes a systematic decision about who is included.\n- Random sampling usually has higher representativeness and a lower risk of bias.\n- Non-random sampling is often easier and faster, but the risk of bias is higher and the results may represent the population less well.\n\n**Quota Sampling**\n\n- `Quota sampling` is a non-random method.\n- The idea is to make the sample reflect important structural characteristics of the population.\n- Typical quota criteria are `age`, `gender`, `residence`, `education`, or `knowledge about a topic`.\n\n1. Determine the relevant characteristics.\n2. Find their proportions in the population.\n3. Convert these proportions into target numbers for the sample.\n4. Recruit participants until each quota is filled.\n\n- Example: if the population is `50.84%` women and `49.16%` men and the sample size is `100`, the quota would be `51` women and `49` men.\n- Quotas can also combine multiple criteria, for example `gender + age`.\n- Advantage: faster and more practical than true random sampling.\n- Problem: even if the quota structure matches the population, the actual people within each quota are still not chosen randomly, so bias can remain.\n\n**Exam Ready**\n\n- `Random sampling = chance-based selection with equal selection probability.`\n- `Non-random sampling = researcher-controlled selection based on a systematic decision.`\n- `Quota sampling` is a good example of non-random sampling: the sample is built to match population proportions, but the individuals are not selected by true random choice.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Methods_of_Research_and_Innovation_Kaltenbrunner.pdf",
+          "pages_raw": "22-23, 28-31"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 6,
+      "courses": [
+        "MRI"
+      ],
+      "question": "Name and explain eight of the twelve flaws one should avoid when creating a questionnaire.",
+      "answer_markdown": "The lecture lists 12 general flaws. All 12 below; pick any 8 to explain in the exam.\n\n1. **Questions too broad / unspecific** — e.g. \"What do you think of cereal?\" gives no usable data because it allows any kind of answer.\n2. **Answer options not MECE** (not mutually exclusive, not covering all cases) — e.g. \"How often do you eat cereal? [multiple times a day / daily / every few weeks / rarely / never]\" leaves no option for \"a few times a week\".\n3. **Unclear order / meaning of answers** — e.g. \"Rarely, often, sometimes, always\" — respondents can't tell what is between \"rarely\" and \"sometimes\".\n4. **No thought about coding and analysis** — mixing scale levels (e.g. one question ordinal, another nominal) makes the intended analysis (e.g. linear regression) impossible afterwards.\n5. **Two or more questions combined into one** — e.g. \"Which cereal do you prefer and how often do you buy it?\" produces answers that can't be separated.\n6. **Too many questions** — respondents lose attention; after a few introductory questions, focus on the relevant aspects only.\n7. **Personal questions at the beginning** — e.g. starting with \"How much do you earn a year?\" causes drop-offs and distrust; personal items belong at the end.\n8. **Not explaining unusual topics** — jargon like \"knowledge graph\", \"reinforcement learning\", \"firewall\" may be obvious to you but not to respondents, leading to noise or non-responses.\n9. **Bias in the questions** — leading or loaded wording pushes respondents toward an answer, e.g. \"Climate change has become a very important topic and not caring about the environment will destroy the earth. What is your opinion on fossil fuels?\"\n10. **Questions / answers not based on (literature) research** — e.g. age categories invented ad hoc instead of using established scales; always reuse existing validated scales where they exist.\n11. **No pre-tests** — the questionnaire has not been tested on a pre-test sample from the general population, so problems with wording, order, or flow only appear after real data collection.\n12. **Questions asked \"just because\"** — every question must serve the research topic; padding with nice-to-know items costs attention and dilutes the data.\n\n## Bonus: related (non-questionnaire-specific) biases from the same slides\n\n- **Interviewer bias** — the interviewer influences the answers (tone, personal interest, demographics). Counter with written/online interviews for critical topics, neutrality reminders, multiple interviewers, training.\n- **Analysis bias** — different analysts would clean and process the data differently. Counter by specifying the analysis method before data collection and letting multiple people analyse.\n- **Interpretation bias** — the same result is interpreted differently depending on personal beliefs. Counter by defining in advance what \"good\" vs. \"bad\" results mean and where the dividing lines sit.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Methods_of_Research_and_Innovation_Kaltenbrunner.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 7,
+      "courses": [
+        "IMPD",
+        "MRI"
+      ],
+      "question": "Ex CEO Ballmer laughs at the early iPhone saying \"500 Dollars -that is the most expensive phone in the world. And it doesn't appeal to business customers, because it doesn't have a keyboard.\" What does that statement have to do with radical innovations vs. incremental innovations and customer needs?",
+      "answer_markdown": "Ballmer judged the first iPhone with the logic of **incremental innovation** and with the expectations of **existing business customers**.\n\n- **Incremental innovation** improves known products for existing markets. Here, customer behavior and articulated needs are easier to assess.\n- **Radical innovation** is rare, risky, has no close predecessor, and often addresses **not-yet-articulated customer needs** or even new customers/markets.\n- Because of that, **market research is limited**: it mainly captures what customers already know and can already express. It is much weaker at detecting what people will value in a fundamentally new solution.\n\nThat is exactly why Ballmer misjudged the iPhone:\n\n- He focused on **existing needs** of current business-phone users: lower price, keyboard, established business use.\n- He overlooked that a radical innovation can create value through **new forms of use** that customers had not clearly asked for yet.\n- So he evaluated a potentially radical product with **incremental criteria**.\n\n**Core point for the exam:**\n\nBallmer's statement shows that radical innovations are often underestimated by incumbents because they do not fit current customer expectations. Existing customers usually articulate what they already know, while radical innovations often succeed by addressing **non-articulated needs** and changing the market itself.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Methods_of_Research_and_Innovation_Kaltenbrunner.pdf",
+          "pages_raw": "50, 57-59"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 8,
+      "courses": [
+        "IMPD"
+      ],
+      "question": "Why does a \"creative room\" alone not trigger innovation? Please explain what it needs for innovation to happen",
+      "answer_markdown": "## Why a room alone is not enough\n\nA creative room is just a visible artefact. The slides make the key point directly:\n\n> People have lots of ideas, but you may need to create the **\"space\"** where innovation takes place. Just asking a question might be enough to get your people to come up with the answer.\n\n\"Space\" here is not physical square-metres, it is cultural and behavioural space. Putting beanbags and a whiteboard in a room does nothing if people still follow the same mental path, are punished for failure, have no clear goal, or are not allowed to challenge the status quo.\n\nInnovation is also difficult by nature:\n\n- People like routine and follow the same mental path.\n- Not every idea will lead to success (tension between **impact** and **feasibility**).\n- Communication is hard: telling an idea and making others understand it the same way are two different things.\n\n## What innovation actually needs\n\n### 1. An innovation culture (Edgar Schein)\n\n> \"The only thing of real importance that leaders do is to create and manage culture. If you do not manage culture, it manages you.\"\n\nCulture operates on three levels:\n\n- **Artefacts** — visible structures and processes (the \"creative room\" lives here, and stops here if nothing else is built).\n- **Espoused values** — stated strategies, goals, philosophies.\n- **Basic assumptions** — the deeply held, taken-for-granted beliefs that actually drive behaviour.\n\n### 2. Concrete conditions that create the culture\n\nFrom the slide \"How do we create Innovation Culture?\":\n\n- Clear goal setting.\n- Assignments that match individual skills and provide positive challenge.\n- Open communication systems.\n- Frequent, constructive and supportive feedback.\n- Equitable and generous rewards and recognition.\n- Absence of unnecessary bureaucracy.\n- Tolerance for failure, willingness to experiment.\n\n### 3. Managing the paradox\n\nAn innovative culture is not just \"freedom\", it pairs opposites:\n\n- Tolerance for failure **+** intolerance for incompetence.\n- Willingness to experiment **+** high discipline.\n- Collaboration **+** individual accountability.\n- Freedom to speak up **+** brutal frankness.\n- Flat structures **+** strong leadership.\n\n### 4. The Innovator's DNA (individual-level skills)\n\nEven the best culture needs people who actively drive innovation. Five skills:\n\n1. **Questioning** — challenge the status quo.\n2. **Observing** — notice what others miss.\n3. **Experimenting** — try things out.\n4. **Networking** — talk to people with opposite views / backgrounds.\n5. **Association** — connect the unconnected; triggered by emotions, senses, prior inputs.\n\n## Short summary\n\nA creative room is only an **artefact**. Real innovation requires the layer below it: a managed **culture** (clear goals, open communication, tolerance for failure, low bureaucracy), leaders who hold the paradox (freedom + discipline), and individuals who practice the **Innovator's DNA** (questioning, observing, experimenting, networking, association). Without these, the room stays empty of ideas.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "VO_02_Innovation.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 9,
+      "courses": [
+        "MRI",
+        "PM1"
+      ],
+      "question": "You are asked to design a systematic literature review on a topic you are familiar with. Explain how the literature review should be constructed so that it does more than summarize prior work and instead identifies a defensible research gap and justifies the proposed study.",
+      "answer_markdown": "A strong systematic literature review should be built as a transparent search-and-synthesis process, not as an author-by-author summary.\n\n1. Start with a clear review objective and research question(s) before searching.\n2. Predefine the databases, search terms, time limits, and inclusion/exclusion criteria.\n3. Document screening and selection with a PRISMA-style process, including duplicates removed and reasons for exclusion.\n4. Extract comparable information from each study, such as methods, sample, context, and findings.\n5. Synthesize across studies thematically or conceptually, comparing agreements, contradictions, limitations, and missing contexts.\n6. Derive the research gap from the pattern of evidence, for example a missing population, setting, method, or unresolved contradiction.\n7. End by showing exactly how the proposed study closes that gap and why that contribution is needed.\n\nThe key point is that the gap must come from systematic evidence, not from a vague claim that “no one has studied this yet.”",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Part1_Literature_research.pdf",
+          "pages_raw": "11-13, 17, 20-22"
+        },
+        {
+          "file": "PM1 - 20241111 - Literature Research 2.pdf",
+          "pages_raw": "3-4, 6-8"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 10,
+      "courses": [
+        "MRI",
+        "PM1"
+      ],
+      "question": "Critically explain the role of PRISMA in systematic literature reviews. What problems does it solve, what does it not solve, and how could a researcher still conduct a rigorous review if they had never heard of PRISMA?",
+      "answer_markdown": "## What PRISMA is\n\n**PRISMA** = **P**referred **R**eporting **I**tems for **S**ystematic Reviews and **M**eta-**A**nalyses. It is an evidence-based minimum set of items for reporting systematic reviews, originally aimed at reviews evaluating the effects of interventions.\n\nFour parts:\n\n1. **Checklist** : the items that must appear in the paper.\n2. **Flow Diagram** : documents records identified, included, excluded, with reasons.\n3. **Statement** : the short guideline document itself.\n4. **Explanation and Elaboration** : detailed rationale and examples for each item.\n\n## What problems PRISMA solves\n\n- **Reporting quality and transparency** : forces the author to state search strings, databases, inclusion / exclusion criteria, and exactly how many papers dropped out at each stage.\n- **Reproducibility** : another researcher can redo the same search and arrive at a comparable set of papers.\n- **Bias reduction** : by demanding that exclusions are justified, it makes cherry-picking visible.\n- **Structure** : gives a concrete skeleton for the review paper, so writers are not inventing the structure from scratch.\n- **Comparability** : different PRISMA-compliant reviews can be compared, because they report the same items.\n\n## What PRISMA does *not* solve\n\n- It does not judge **whether the search strategy itself is good** : a poor query in the wrong databases still passes PRISMA if it is documented.\n- It does not replace **domain expertise** : PRISMA cannot tell you whether an excluded paper was actually relevant, or whether the included ones are the important ones in the field.\n- It does not do the **content analysis or synthesis** : interpreting what the included literature actually *says* is still the researcher's job.\n- It does not guarantee **quality of the primary studies** reviewed (that is the role of separate risk-of-bias tools).\n- It is a reporting guideline, not a research method : following the checklist does not by itself make the underlying review rigorous.\n\n## Doing a rigorous review without PRISMA\n\nEven without knowing the acronym, a researcher can hit the same quality bar by applying the underlying principles:\n\n- **Write a protocol first** (research question, scope, inclusion / exclusion criteria) and, ideally, pre-register it.\n- **Document the search** : databases used, exact queries, date of search, filters applied.\n- **Log every paper** and the reason it was kept or dropped, so the funnel is reconstructible.\n- **Use multiple reviewers** or at least a second pair of eyes for screening, to control individual bias.\n- **Assess study quality** explicitly (e.g. risk-of-bias criteria), not just count papers.\n- **Report limitations** of the search and of the synthesis honestly.\n- **Peer-review the method** before running it, so flaws show up before the data is locked in.\n\n## Short summary\n\nPRISMA is a **reporting guideline**, not a recipe for good research. It solves the *transparency, reproducibility and bias-documentation* problem by forcing a standard checklist and flow diagram, but it does not fix a weak search, replace expert judgement, or do the actual synthesis. A researcher who never heard of PRISMA can still produce a rigorous review by applying the same principles: upfront protocol, fully documented search and exclusions, multiple reviewers, explicit quality assessment, and honest reporting of limitations.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Part1_Literature_research.pdf",
+          "pages_raw": ""
+        },
+        {
+          "file": "PRISMA_2020_checklist.docx",
+          "pages_raw": ""
+        },
+        {
+          "file": "PRISMA_2020_flow_diagram_new_SRs_v1.docx",
+          "pages_raw": ""
+        },
+        {
+          "file": "PM1 - 20241111 - Literature Research 2.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 11,
+      "courses": [
+        "MRI",
+        "PP"
+      ],
+      "question": "You are supervising a survey paper in Cyber Security. Explain how correct citation practice supports not only academic honesty but also argumentation quality, traceability, and reader verification. Illustrate your answer with direct quotation, paraphrase, and figure/data citation cases.",
+      "answer_markdown": "Correct citation practice in a cyber-security survey supports four things at once:\n\n- **Academic honesty:** you acknowledge others' ideas, wording, figures, and data instead of presenting them as your own.\n- **Argumentation quality:** citations show which source supports which claim and how your argument is built.\n- **Traceability:** readers can track down the original source if they want more detail.\n- **Reader verification:** complete references let readers re-find the source and check whether you cited it fairly.\n\nThe PP bibliography slide adds that a reference entry should contain enough metadata to stay findable later, for example author, title, year, publication type, and DOI / ISBN / stable URL.\n\n**Three citation cases:**\n\n- **Direct quotation:** use quotation marks, keep the wording exact, and give the source plus page number. Example: quoting the exact wording of an RFC, CVE description, or attack model. Direct quotes should be rare.\n- **Paraphrase:** restate the source in your own words, but still cite it. Rewording without citation is plagiarism, and wording that stays too close to the original is also problematic. This is the normal form in a survey because it enables comparison and synthesis.\n- **Figures and data:** every non-original figure, table, diagram, or dataset needs a source line such as `Source: ...` or `Adapted from ...`. For changing datasets such as CVE / NVD snapshots, cite the version or date. If there is too much raw data, keep only relevant excerpts in the main text and refer to the appendix.\n\nAs a supervisor, I would check that every non-trivial claim is cited, direct quotes are page-numbered, paraphrases are genuine, figures and tables have source lines, and the bibliography is complete. If that is done well, the paper is not just honest, but also argued, traceable, and verifiable.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Part1_Literature_research.pdf",
+          "pages_raw": "9"
+        },
+        {
+          "file": "20250428_papers-theses.pdf",
+          "pages_raw": "42, 45"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 12,
+      "courses": [
+        "PP",
+        "PM1"
+      ],
+      "question": "The survey paper assignment requires students to present the state of the art, identify trends, discuss contradictions or gaps, and document the literature-search methodology in PRISMA-like form. Design an answer strategy for such a paper and explain how you would judge whether the paper reflects mature research thinking rather than mere compilation.",
+      "answer_markdown": "## Answer strategy for the survey paper\n\nA survey paper is a **Systematic Literature Review (SLR)**, so the work splits into method and synthesis.\n\n**1. Scope and research question.** Define a clear, focused, answerable research question; fix inclusion / exclusion criteria *before* searching (publication date, language, peer-reviewed, topical fit).\n\n**2. Search methodology (the PRISMA-like part).**\n\n- Databases: IEEE Xplore, ACM DL, Scopus, SpringerLink, Google Scholar.\n- Build search strings in blocks of synonyms, linked with AND / OR.\n- Log, for each database, the query, the date, and the number of hits.\n- Merge, deduplicate (Zotero / EndNote), then apply inclusion / exclusion.\n- Report the funnel in a **PRISMA flow diagram** (identified, screened, included, excluded with reason).\n\n**3. State of the art.** Group the included papers by theme or sub-problem, not by author. For each cluster, describe what is established, by whom, and on what evidence.\n\n**4. Trends.** Look across time: which methods are rising, which are fading, where the field is moving (e.g. shift from rule-based to transformer models; emerging benchmarks, new datasets, regulation).\n\n**5. Contradictions and gaps.** Apply a meta-level to the cluster: where do papers disagree, where are results not reproducible, which questions are untouched. These gaps are what justify new research, the \"space\" you carve out for your own work.\n\n**6. Synthesis and conclusion.** Do not just list findings; tie them back to the research question and show the implication for practice or for further research.\n\n## How to judge \"mature research thinking\" vs mere compilation\n\nA compilation reads like a bibliography with sentences between entries. A mature paper shows judgement. Concrete markers:\n\n- **The paper argues, it does not just summarise.** There is a thread from question → method → findings → conclusion.\n- **Papers are compared**, not listed. The author points out *why* two studies disagree, not just that they do.\n- **The method is transparent and reproducible**: PRISMA diagram is present, search terms and dates are given, inclusion / exclusion criteria are justified.\n- **Critical stance**: weaknesses of individual studies are named (sample size, methodology, missing replication), not hidden.\n- **Gaps are specific and actionable**, not \"more research is needed\".\n- **Own voice**: the author's interpretation is distinguishable from the sources, typically visible in framing sentences, topic clusters, and the conclusion.\n- **Citations are purposeful**, every cited paper earns its place, no citation padding.\n- **Limitations of the review itself** are acknowledged (languages excluded, databases not covered, publication bias).\n\n## Short summary\n\nWrite the survey in two layers: a **documented, PRISMA-style method** (question, databases, search strings, inclusion / exclusion, flow diagram) and a **synthesising narrative** (themed state of the art, trends, contradictions, gaps, conclusion). The paper is mature when it *argues and compares* instead of listing, when the method is reproducible, when gaps are specific, when the author's voice is visible, and when the review's own limitations are acknowledged. If any of these are missing, it is a compilation, not a review.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "20250428_papers-theses.pdf",
+          "pages_raw": ""
+        },
+        {
+          "file": "PM1 - 20241111 - Literature Research 2.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 13,
+      "courses": [
+        "AI"
+      ],
+      "question": "You have a dataset containing information about soldiers in an army. The dataset contains their military ranks, names, monthly income, height and weight, date of birth, the number of shirts issued to them, and the timestamp of when they signed their contract. Explain what attribute types these data fields belong to and how these types influence the way you can analyze this dataset.",
+      "answer_markdown": "## Attribute types\n\n| Field | Attribute type | What that means for analysis |\n| --- | --- | --- |\n| Military rank | **Ordinal categorical** | The values have a natural order (`private < sergeant < lieutenant`), but the distances between ranks are not numeric. You can sort, rank, count, or use ordinal encoding, but arithmetic like averaging rank differences is not meaningful in the same way as for measurements. |\n| Name | **Nominal categorical** | A name is just a label/identifier. You can test equality, count frequencies, or use it as a key for joins, but arithmetic on encoded names would be meaningless. In ML, this is usually dropped or treated as an ID, not as a real numeric feature. |\n| Monthly income | **Ratio-scale quantitative** | Has a true zero and meaningful ratios, so arithmetic is valid. You can compute mean, median, variance, compare differences and proportions, correlate it with height/weight, and scale/normalize it for ML. |\n| Height | **Ratio-scale quantitative** | Continuous measurement with a true zero. Means, standard deviations, correlations, scatterplots, boxplots, and normalization are meaningful. |\n| Weight | **Ratio-scale quantitative** | Same as height: continuous ratio data, so standard descriptive statistics and numeric models are appropriate. |\n| Date of birth | **Interval temporal** | Differences are meaningful, but the zero point is arbitrary, so ratios are not. Usually you do not analyze raw DOB directly; you derive more useful features such as **age** or age groups. |\n| Number of shirts issued | **Discrete ratio count** | A count with a true zero, but only integer values are possible. You can count frequencies, compute averages, and compare counts, but the data stays discrete rather than continuous. |\n| Contract-signing timestamp | **Interval temporal / time variable** | Useful for temporal analysis. You usually work with differences or derived features such as **tenure**, **time of day**, **day of week**, or trends over time, rather than with the raw timestamp alone. |\n\n## How the types influence analysis\n\n**Nominal data** such as names can only be compared for equality/inequality. Typical analyses are frequencies, grouping, and using the value as an identifier. If you encode nominal categories with numbers, those numbers must not be treated as real quantities.\n\n**Ordinal data** such as rank has order, so sorting and ranking are meaningful. However, the gap between two neighboring ranks is not a measurable numeric distance. For machine learning, ordinal encoding can make sense because the order is real.\n\n**Ratio data** such as income, height, weight, and shirt count supports the full range of numeric operations. This is where mean, variance, standard deviation, correlation, regression, normalization, outlier detection, histograms, boxplots, and scatterplots are appropriate.\n\n**Temporal interval data** such as date of birth and timestamps is usually most useful after transformation. From DOB you derive age; from a timestamp you derive tenure, hour, weekday, month, or a time series. For trends over time, line charts are appropriate.\n\n## Short summary\n\nThe key idea is: **not every stored value can be analyzed like a real number**. Names are nominal labels, ranks are ordered but not truly numeric, income/height/weight are genuine quantitative ratio variables, shirt count is a discrete ratio count, and DOB/timestamps are temporal interval values that are often most useful after feature engineering. This determines which summaries, visualizations, encodings, and machine-learning steps are valid and which would produce misleading results.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "AI_DataEngineeringVisualization_2024.pdf",
+          "pages_raw": "34-35"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 14,
+      "courses": [
+        "AI"
+      ],
+      "question": "What are the 6 criteria of Data Quality? Give an example for each one.",
+      "answer_markdown": "## The 6 criteria\n\n**1. Completeness** : no required values are missing.\n\n- *Example*: a customer table where every row has a non-empty email field; if 10 % of rows have a blank email, the data is incomplete.\n\n**2. Accuracy** : the value correctly represents the real-world entity.\n\n- *Example*: a customer's address in the CRM matches where they actually live; an address that points to an old, no-longer-valid flat is inaccurate, even though the field is filled.\n\n**3. Consistency** : the same fact is stored the same way across systems and records.\n\n- *Example*: the currency for an order is \"EUR\" in the billing DB and \"EUR\" in the analytics DB. If one system has \"€\" and another \"EUR\", the data is inconsistent.\n\n**4. Timeliness** : data is up to date relative to the decision it supports.\n\n- *Example*: a stock-level dashboard refreshed every 5 minutes for an online shop. A stock value from last week is not timely enough to prevent overselling.\n\n**5. Validity** : values follow the defined format, type, and allowed range.\n\n- *Example*: a date-of-birth field in `YYYY-MM-DD` with a year between 1900 and today; `1899-13-45` is invalid.\n\n**6. Uniqueness** : each real-world entity appears exactly once, no duplicates.\n\n- *Example*: one customer record per customer ID. If \"Jane Doe\" exists three times with slightly different spellings, uniqueness is violated.\n\n## Short summary\n\nThe 6 classic data quality criteria are **Completeness, Accuracy, Consistency, Timeliness, Validity, Uniqueness**. Completeness and Validity answer *is the field filled and well-formed*, Accuracy answers *is it true*, Consistency and Uniqueness answer *is it aligned across the data set*, and Timeliness answers *is it still current*. A good data quality check ensures all six before the data is used for analysis or decision-making. (The AI course slide also adds Correctness, Relevance and Uniformity as further dimensions; the 6 above are the standard core set.)",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "AI_DataEngineeringVisualization_2024.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 15,
+      "courses": [
+        "AI"
+      ],
+      "question": "Describe the relationship between AI and Machine Learning. What are the different fields of Machine Learning and how do they differ?",
+      "answer_markdown": "Artificial Intelligence (AI) is the broader field of building systems that perform tasks that normally require human intelligence. Machine Learning (ML) is a subset of AI: instead of a human defining all rules explicitly, an ML model learns patterns and rules from sample data. Deep Learning is a further subset of ML.\n\nIn short:\n- AI is the umbrella term.\n- ML is one important approach within AI.\n- Deep Learning is a special area within ML.\n\n## Relationship Between AI and ML\n\nThe basic difference from classic programming is:\n- Classic programming: a human defines the rules.\n- Machine learning: the model learns the rules from data.\n\nThat is why ML is used for problems where the rules are hard to write manually but enough good data is available.\n\n## Main Fields of Machine Learning\n\n| Field | Data / feedback | Main goal | Typical result |\n| --- | --- | --- | --- |\n| Supervised learning | Labeled data | Predict a known target | Classification or regression |\n| Unsupervised learning | Unlabeled data | Find hidden structure in data | Clusters, associations, patterns |\n| Reinforcement learning | Reward / penalty from interaction | Learn the best strategy over time | A policy that maximizes reward |\n\n### 1. Supervised Learning\n\nSupervised learning uses labeled examples, meaning the correct output is known during training. The model learns the relationship between input features and the target value.\n\nTypical tasks:\n- Classification: predict a category.\n- Regression: predict a numeric value.\n\nImportant idea:\n- The model is trained on training data and checked on test data.\n\n### 2. Unsupervised Learning\n\nUnsupervised learning uses data without predefined labels. The model is not told what the correct answer is, so it tries to detect structure on its own.\n\nTypical tasks:\n- Clustering similar data points.\n- Finding associations or patterns in the data.\n\nMain difference from supervised learning:\n- There is no known target output.\n\n### 3. Reinforcement Learning\n\nReinforcement learning is based on an agent interacting with an environment. The agent takes actions and receives rewards or penalties. Over time, it learns a strategy that maximizes long-term reward.\n\nMain idea:\n- Learning happens through trial and error, not through fixed labels.\n\n## Key Differences\n\n- Supervised learning learns from correct answers.\n- Unsupervised learning learns from structure in unlabeled data.\n- Reinforcement learning learns from rewards while acting in an environment.\n\n## Short Exam Answer\n\nAI is the broad field of intelligent systems, while machine learning is a subset of AI in which models learn rules from data instead of being fully programmed by humans. The main fields of ML are supervised learning, unsupervised learning, and reinforcement learning. They differ mainly in the type of feedback: supervised learning uses labeled data, unsupervised learning uses unlabeled data, and reinforcement learning uses rewards and penalties from interaction with an environment.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "AI_IntroductionFundamentals_2024.pdf",
+          "pages_raw": "6, 8, 10-13"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 16,
+      "courses": [
+        "AI",
+        "MRI"
+      ],
+      "question": "Describe the different scale levels of data and give an example for each of them.",
+      "answer_markdown": "## The scale levels\n\nScale level tells you **which operations are allowed** on a variable. There are four main levels (plus absolute as a subtype of ratio), grouped into two families:\n\n**Categorical scales** (no meaningful distances):\n\n**1. Nominal** : values are just *names*, no order, no arithmetic.\n\n- Allowed: =, ≠, counting.\n- *Example*: car colour (red, blue, green), zip code, gender, customer ID. Zip codes look like numbers but they are names, subtraction makes no sense.\n\n**2. Ordinal** : values have a *natural order*, but differences between them are not meaningful.\n\n- Allowed: =, ≠, <, >, sort, median.\n- *Example*: military ranks (private < sergeant < captain), Likert scale (strongly disagree → strongly agree), customer satisfaction grades (A, B, C).\n\n**Metric / cardinal scales** (meaningful distances):\n\n**3. Interval** : order *and* meaningful differences, but **no natural zero**, so ratios do not make sense.\n\n- Allowed: above plus + and − and arithmetic mean.\n- *Example*: temperature in °C (20°C is not \"twice as warm\" as 10°C), clock time, calendar years. Zero point is arbitrary.\n\n**4. Ratio** : order, meaningful differences *and* meaningful ratios, because there is a natural zero that means \"absence of the attribute\".\n\n- Allowed: all arithmetic, including multiplication, division, geometric mean.\n- *Example*: weight (0 kg = no weight, 80 kg is twice 40 kg), height, age, income, distance.\n\n**(5. Absolute)** : a subtype of ratio where the unit itself is fixed by nature, typically counts.\n\n- *Example*: number of employees, number of website visits, pieces in a box.\n\n## Why scale level matters\n\n- It determines which **statistics** are valid: mode for all, median from ordinal upwards, arithmetic mean only from interval upwards, geometric mean only for ratio.\n- It determines which **analyses** are valid: a linear regression between one nominal and one ordinal variable (see the \"how to fail\" slide in MRI) is a classic questionnaire mistake.\n- It determines which **encoding** is needed for ML: label / one-hot for nominal, ordinal encoding for ordered categories, direct use for metric.\n\n## Short summary\n\nFour main levels: **Nominal** (names, e.g. car colour), **Ordinal** (ordered but no distances, e.g. military ranks), **Interval** (ordered, meaningful distances, no natural zero, e.g. °C), **Ratio** (ordered, distances and ratios, natural zero, e.g. weight). Absolute is a fixed-unit subtype of ratio, typically counts. Nominal and ordinal are *categorical*, interval and ratio are *metric*. The level fixes which operations, statistics and ML encodings are legitimate.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "AI_DataEngineeringVisualization_2024.pdf",
+          "pages_raw": ""
+        },
+        {
+          "file": "Methods_of_Research_and_Innovation_Kaltenbrunner.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 17,
+      "courses": [
+        "AI"
+      ],
+      "question": "Describe the most important encoding mechanisms for categorical data.",
+      "answer_markdown": "Categorical variables usually have to be transformed into numerical form, because most machine learning algorithms cannot process raw categories directly.\n\n| Encoding | Basic idea | Main point for exams |\n| --- | --- | --- |\n| **Label encoding** | Assign each category an integer value (`0 ... n`). | Very simple, but for nominal data it introduces an artificial order that usually has no real meaning. |\n| **Ordinal encoding** | Assign integers according to a real rank or order. | Suitable for ordered categories such as `low < medium < high`. |\n| **One-hot encoding** | Create one binary column per category; `1` means the category is present, `0` otherwise. | Best-known method for nominal data because it avoids fake order, but it increases the number of columns. |\n| **Binary encoding** | First map categories to integers, then represent those integers as binary digits across several columns. | Needs fewer columns than one-hot, so it is useful when a feature has many different categories. |\n| **Mean (target) encoding** | Replace each category with the mean target value of that category. | Compact encoding, especially for high-cardinality features, but it depends on the target variable. |\n\nImportant distinctions:\n\n- **Label encoding** is easy, but problematic for unordered categories like hair color, because the numbers suggest mathematical distances or order that do not actually exist.\n- **Ordinal encoding** is the correct variant when the categories really do have a meaningful sequence.\n- **One-hot encoding** is often preferred for unordered categories. Its drawback is dimensionality: many categories create many new features. In practice, one dummy column is often omitted, leaving `n-1` columns.\n\nExam takeaway:\n\n- Use **ordinal encoding** for ordered categories.\n- Use **one-hot encoding** for unordered nominal categories.\n- Be careful with **plain label encoding** for nominal data.\n- **Binary** and **mean encoding** are useful alternatives when the number of categories is large.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "AI_DataEngineeringVisualization_2024.pdf",
+          "pages_raw": "34-36"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 18,
+      "courses": [
+        "AI"
+      ],
+      "question": "What is Overfitting? What can you do against it?",
+      "answer_markdown": "## What Overfitting is\n\nA model is **overfitting** when it learns the *training data too well*, including its noise and idiosyncrasies, and therefore fails to generalise to new data.\n\nSignal: **training performance is good, validation / test performance is markedly worse**. In bias / variance terms, overfitting = **high variance, low bias**. Its opposite is underfitting (model too simple, high bias, low variance).\n\nTypical causes:\n\n- Model too complex (too many layers, too many parameters) for the amount of data.\n- Too few training samples.\n- Training for too many epochs.\n- Insufficient regularisation.\n- Data leakage, or a training set that does not represent reality.\n\n## What to do against it\n\nFrom the AI course's \"if you are overfitting you can\" list and the regularisation overview:\n\n**1. Regularise the model.** Add a penalty to the loss function so the weights cannot grow arbitrarily.\n\n- **L1 (Lasso)**: penalty proportional to |weights|, pushes weights to zero, effectively feature selection.\n- **L2 (Ridge)**: penalty proportional to weights², keeps weights small, most common default.\n- **Elastic Net** (L1 + L2): combination of both.\n\n**2. Early stopping.** Monitor validation loss after each epoch and stop as soon as it starts to rise again, before the model memorises the training set.\n\n**3. Dropout.** During training, randomly zero out a fraction (typically 0.2 – 0.5) of neurons per batch. This forces the network to learn redundant, resilient representations and prevents neuron co-adaptation.\n\n**4. Batch normalisation.** Normalise activations layer by layer; it speeds training *and* reduces overfitting by acting as a mild regulariser.\n\n**5. More / better data.**\n\n- Collect more samples (no regularisation substitutes for real data).\n- **Data augmentation** (rotations, crops, noise for images; synonym / back-translation for text) to artificially enlarge the training set.\n- **Normalisation** so the model does not fit to scale artefacts.\n\n**6. Reduce model capacity.** Fewer layers / fewer neurons, simpler architecture, or train shorter.\n\n**7. Cross-validation.** Use k-fold CV to detect overfitting reliably instead of relying on a single train / test split.\n\n**8. Ensembling.** Bagging, random forests or averaging several models reduces variance.\n\n## Short summary\n\nOverfitting = the model memorises the training data, so training accuracy is high but validation / test accuracy drops. It is the high-variance side of the bias / variance tradeoff. Counter it with **regularisation (L1, L2, Elastic Net), early stopping, dropout, batch normalisation**, more / augmented data, a simpler model and cross-validation. If training and validation curves diverge, you are overfitting; if both are poor, you are underfitting.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "DeepLearning_en.pdf",
+          "pages_raw": ""
+        },
+        {
+          "file": "quality_criteria.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 19,
+      "courses": [
+        "AI"
+      ],
+      "question": "Describe the difference between supervised and unsupervised learning. What algorithms are typical examples for each method? Name some use cases.",
+      "answer_markdown": "**Supervised learning**\n\n- Uses **labeled data**: for each training example, the correct output / class is already known.\n- Goal: learn a relationship between input features and a target value so the model can make **predictions** for new data.\n- Typical tasks: **classification** and **regression**.\n- Typical examples of algorithms: **linear regression**, **logistic regression**, **decision trees**, **k-nearest neighbor**, **neural networks**.\n- Typical use cases: **credit scoring**, **churn prediction**, **campaign management**, **customer lifetime value prediction**, **price or load forecasting**, **spam detection**.\n\n**Unsupervised learning**\n\n- Uses **unlabeled data**: class memberships / target values are **not available**.\n- Goal: discover structure in the data, for example by grouping similar objects.\n- Typical tasks: **clustering**, **association analysis**, **dimensionality reduction**, **anomaly detection**.\n- Typical examples of algorithms: **k-means**, **hierarchical clustering**, **expectation maximization**, **principal component analysis (PCA)**, **self-organizing maps**.\n- Typical use cases: **customer segmentation**, **market basket analysis**, **customer journey analysis**, **grouping similar documents or products**, **anomaly detection**.\n\n**Main difference**\n\n- **Supervised learning** learns from examples with the correct answer already given.\n- **Unsupervised learning** works without predefined labels and tries to find hidden patterns or clusters in the data.\n\n**Short exam answer**\n\nSupervised learning uses labeled training data and is mainly used for prediction tasks such as classification and regression. Unsupervised learning uses unlabeled data and is mainly used to discover structure in data, especially clusters or other patterns. Typical supervised methods are linear/logistic regression, decision trees, k-NN, and neural networks; typical unsupervised methods are k-means, hierarchical clustering, EM, and PCA. Common use cases are credit scoring or churn prediction for supervised learning, and customer segmentation or market basket analysis for unsupervised learning.\n\n> Source note: the current frontmatter pages (`8, 10-11`) support the conceptual distinction, but the same PDF's nearby pages `9` and `15` appear to contain the concrete use-case and algorithm examples used in this answer, so the source metadata is likely incomplete.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "AI_IntroductionFundamentals_2024.pdf",
+          "pages_raw": "8, 10-11"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 20,
+      "courses": [
+        "AI"
+      ],
+      "question": "What is known as the \"AI Winter\" and what was the reason for it?",
+      "answer_markdown": "> Note: the term **\"AI Winter\" is not used in the lecture slides**. The AI intro deck only shows a history timeline without discussing downturns. The answer below is standard AI history as background knowledge; the one concrete slide hook is Minsky & Papert's 1969 *Perceptrons* critique in the Multilayer Perceptron deck, which is the accepted cause of the first winter.\n\n## What the AI Winter is\n\n**AI Winter** is the term used for **periods of reduced funding, interest and progress in AI research**, following waves of hype in which the field had over-promised and under-delivered. After each hype cycle, investors, governments and the public lost confidence, money dried up, and AI research slowed for years. There are conventionally two main AI winters.\n\n## First AI Winter (roughly 1974 – 1980)\n\nCauses:\n\n- **Perceptron controversy**: Minsky and Papert's 1969 book *Perceptrons* showed that a single-layer perceptron cannot solve non-linearly separable problems (e.g. XOR). This effectively killed funding for neural networks for years.\n- **Lighthill Report (1973, UK)**: a harshly critical assessment that claimed AI had failed its ambitions, which triggered large cuts to UK AI funding.\n- **DARPA cuts in the US**: after the Speech Understanding Research programme failed to meet its targets.\n- **ALPAC report (1966)**: judged machine translation a failure, cutting MT funding.\n- Hardware and data of the time were simply too weak for the claims researchers had made.\n\n## Second AI Winter (late 1980s – early 1990s)\n\nCauses:\n\n- **Collapse of the LISP machine market (1987)**: specialised AI hardware was suddenly beaten by cheaper general-purpose workstations.\n- **Expert systems failed to scale**: they were brittle, required enormous manual knowledge engineering, and could not handle cases outside their rule base. The \"knowledge acquisition bottleneck\" was never solved.\n- **Japan's Fifth Generation Computer project** did not deliver its promised breakthroughs.\n- **DARPA Strategic Computing Initiative** pulled funding when results did not meet expectations.\n- Commercial disillusionment: companies had bought into AI products that did not pay off.\n\n## Why it keeps happening\n\nThe same underlying pattern recurs:\n\n- **Over-hyped promises** set unrealistic expectations.\n- **Limited compute, data or theoretical foundations** at the time cannot back those promises.\n- **Funding bodies and the market** reverse sharply when the promises miss.\n- A quieter phase of research follows, which later produces the next breakthrough (backpropagation in the 1980s, deep learning in the 2010s).\n\n## Short summary\n\nAI Winter = a phase of **collapsed funding and interest in AI**, caused by the field over-promising and then failing to deliver. The **first winter (mid-1970s to around 1980)** followed the perceptron critique, the Lighthill report and the ALPAC / speech-recognition failures. The **second winter (late 1980s to early 1990s)** followed the collapse of the LISP-machine market and the failure of expert systems to scale. The root cause is always the same: hype exceeds what current hardware, data and methods can actually deliver.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 21,
+      "courses": [
+        "EP"
+      ],
+      "question": "Why do Entrepreneurs need a Business Plan? What is it for, what does it have to contain, how is it structured (name the most important chapters)?",
+      "answer_markdown": "A business plan is a written business concept in which all key aspects of a business idea are documented. It describes the future of the business and shows how the idea will be implemented successfully.\n\n## Why entrepreneurs need a business plan\n\n- It reduces commercial risk.\n- It forces the founder to think the idea through in detail.\n- It serves as an important planning and monitoring tool.\n- It gives orientation for goals, actions, and priorities.\n- It strengthens the founder's position in negotiations because they are better prepared for questions.\n- It is often a prerequisite for financing by banks, investors, and funding agencies.\n\n## What it is for\n\n- To check whether the business idea is realistic and viable.\n- To guide implementation of the business.\n- To communicate the idea clearly to outsiders.\n- To convince lenders, investors, and partners.\n- To provide a basis for financial planning and control.\n\n## What it should contain\n\n- The basic business concept: industry, business structure, product or service, and the core idea.\n- The strategy and the concrete actions for implementation.\n- The goals of the business and when/how they should be reached.\n- The products or services and their competitive advantages.\n- The target market, customers, and marketing approach.\n- The management team and key employees.\n- The financial needs and projected financial statements.\n\nIn short, it should explain what the business does, why customers will buy it, how it will compete, who will run it, and how it will be financed.\n\n## Most important chapters / structure\n\n1. Executive summary\n2. Product / service\n3. Company & management\n4. Marketing & distribution\n5. Industry, market & competition\n6. Success and financial planning\n7. Appendix, including CVs and tables\n\n## What makes a good business plan\n\n- It is clear, logical, and well structured.\n- It knows the competition and the target audience.\n- It supports claims with evidence.\n- It uses conservative financial estimates.\n- It is realistic about time and resources.\n- It shows a strong and credible management team.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Entrepreneurship.pptx",
+          "pages_raw": "11-17"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 22,
+      "courses": [
+        "IMPD"
+      ],
+      "question": "Describe the steps of the Innovation Process",
+      "answer_markdown": "## Starting point: what an innovation process is\n\nThe lecture defines the innovation process as a **structured, systematic, multi-phase approach** for turning new ideas into value. Key properties from the slides:\n\n- Structure can be managed, measured, monitored and improved.\n- No universal process exists; every company needs to adapt one.\n- It has to allow for **process loops, process exits and room for the unexpected**.\n- It is the job of **Innovation Management** to set up and support this process, define risk / opportunity handling, set responsibilities and monitor success.\n\n## Layer 1: Simplified Innovation Process (5 steps)\n\n**1. Idea Generation**\n\n- Generate a *large* number of new ideas, not every idea will make it.\n- Internal sources: suggestion systems, R&D, customer support, hotline, complaints.\n- External sources: competition, other markets, tech developments, trends, market research institutes, customers, crowd sourcing.\n\n**2. Idea Selection**\n\n- Feasibility check against criteria: technical feasibility, economic viability, resource availability.\n- Evaluation tools: cost-benefit analysis, decision tree analysis.\n\n**3. Idea Realisation**\n\n- Turn the idea into a *concept, design, prototype*.\n- Deep dive into the idea and think about future steps.\n- This phase becomes the template for the actual product / process realisation.\n\n**4. Test**\n\n- \"Final rehearsal\": test concept, product, name, packaging, UX.\n- Collect (potential) customer feedback.\n- Decide if modifications are needed. Testing is expensive, so it has to be planned.\n\n**5. Market Entry**\n\n- High cost for production and marketing; good communication of information is crucial.\n- Typical pitfalls: wrong assessment of customer behaviour, opposition from retail, competition blocking, and disturbance of operations (capacity, logistics, bottlenecks).\n\n## Layer 2: Innovation Process Scheme (detailed view)\n\nThe simplified 5 steps are a subset of a richer scheme:\n\n1. **Innovation Trigger** : a problem, a gap between actual and target state; identified via situational analysis, market observation and spotting opportunities.\n2. **Obtaining of Ideas** : collection of existing ideas (customers, suppliers, employees, competition), promotion of new solutions, catalogued in an \"idea database\" and screened for fit.\n3. **Evaluation** : pursue promising ideas, drop the rest, *interdisciplinary* assessment, rank the most promising.\n4. **Selection (Decision)** : decide what will be realised; often decided by top management, separate from the evaluation group.\n5. **Realisation** : either as a project (resource-heavy, high novelty) or integrated into a routine process (lower complexity).\n6. **Market Entry** : the point at which the **invention becomes an innovation**; deploy the 4Ps of marketing, adjusted to company strategy, ahead of entry.\n\n**Innovation Controlling** is drawn as a **cross-sectional process** in the slide: it plans, steers, coordinates and controls innovation activities across *all* phases, aggregating information for decision-making.\n\n## \"Reality\" caveat from the slides\n\nThe lecture explicitly warns that in practice:\n\n- A clear separation of phases is often not possible.\n- Some steps are skipped, some are repeated.\n- Parallel activities create interdependencies: **Simultaneous Engineering** pushes such parallelisation on purpose, removing department lines, cutting waiting times and defining clear interfaces between steps.\n\n## Short summary\n\nAccording to `VO_02_Innovation.pdf`, the innovation process has a **simplified 5-step view**: Idea Generation → Idea Selection → Idea Realisation → Test → Market Entry. A more detailed **Innovation Process Scheme** expands this into: Innovation Trigger → Obtaining of Ideas → Evaluation → Selection → Realisation → Market Entry, with **Innovation Controlling running cross-sectionally** over all phases. In reality, phases may be skipped, repeated, or run in parallel (Simultaneous Engineering), and the whole process is coordinated by Innovation Management.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "VO_02_Innovation.pdf",
+          "pages_raw": "36-41, 43-59"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 23,
+      "courses": [
+        "IMPD",
+        "EP"
+      ],
+      "question": "Describe the Business Model Canvas. What segments are included in the canvas?",
+      "answer_markdown": "The **Business Model Canvas (BMC)** is a **one-page visual tool** for describing a business model. It gives a **high-level overview of the key building blocks** of a business and helps explain **how value is created, delivered, and captured**.\n\n## Canvas overview\n\nBecause the **BMC uses spanning rows and columns**, a normal Markdown table cannot represent its layout correctly. The canvas is shown below as a diagram.\n\n![Business Model Canvas](assets/23-bmc.svg)\n\nVisually, the canvas can be read as: **left = infrastructure** (`Key Partners`, `Key Activities`, `Key Resources`), **center = value proposition**, **right = customer side** (`Customer Relationships`, `Channels`, `Customer Segments`), and **bottom = finances** (`Cost Structure`, `Revenue Streams`).\n\n## The 9 segments\n\n| Segment | Meaning |\n| --- | --- |\n| **Customer Segments** | The groups of customers the company wants to serve. |\n| **Value Proposition** | The value offered to customers; the problem solved or need satisfied. |\n| **Channels** | How the company reaches customers and communicates with them. |\n| **Customer Relationships** | The kind of relationship the company builds and maintains with customers. |\n| **Revenue Streams** | How the business earns money from each customer segment. |\n| **Key Resources** | The most important assets needed to create and deliver the value proposition. |\n| **Key Activities** | The main things the business must do to operate successfully. |\n| **Key Partnerships** | Important suppliers, partners, and external actors that support the business. |\n| **Cost Structure** | The main costs involved in operating the business model. |\n\n## Useful grouping from the course\n\n- **Feasibility**: Key Partners, Key Activities, Key Resources\n- **Desirability**: Value Proposition, Channels, Customer Relationships, Customer Segments\n- **Viability**: Cost Structure, Revenue Streams\n\nFor an exam answer, it is usually enough to say that the BMC is a **structured one-page framework with nine building blocks** used to describe how a business works and how it creates, delivers, and captures value.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "VO_04_New-Product-Development.pdf",
+          "pages_raw": "55-58"
+        },
+        {
+          "file": "Entrepreneurship.pptx",
+          "pages_raw": "37-38"
+        }
+      ],
+      "images": [
+        "23-bmc.svg"
+      ]
+    },
+    {
+      "qid": 24,
+      "courses": [
+        "DT",
+        "IMPD"
+      ],
+      "question": "Describe all steps of the Design Thinking Process. Discuss why the Process is to be conducted as a repeating cycle rather than a linear programme.",
+      "answer_markdown": "## What Design Thinking is (slide definition)\n\n> \"Design Thinking is a **mindset, culture and process** to create products, services and business models based on **extensive human-centred research and iterative prototyping**.\" (Leifer, Stanford; quoted in both decks)\n\nThe core goal is to develop a solution that is **desirable, viable and feasible** for the user, starting from the customer and their problem.\n\n## The 5 steps of the Design Thinking Process\n\nFrom `VO_03_Design-Thinking-Recap.pdf` (p. 8-9) and `241104_Design Thinking_Module1.pdf` (p. 27-29):\n\n**1. Empathize** : *Develop a deep understanding of the challenge.*\n\n- Walk in the customer's shoes, observe, interview, gather qualitative data.\n- Tools used in the course: interviews, Fly-on-the-Wall, Dispatch Center, beliefs worksheet.\n\n**2. Define** : *Clearly articulate the problem you want to solve.*\n\n- Synthesize the research into a sharp problem statement.\n- Tools: personas, \"How might we…\" questions, knowns / unknowns.\n\n**3. Ideate** : *Brainstorm potential solutions; select and develop your solution.*\n\n- Generate as many ideas as possible (create choices), then converge on the most promising (make choices).\n- Quantity first, no early judgement, build on others' ideas.\n\n**4. Prototype** : *Design a prototype (or a series of prototypes) to test all or part of your solutions.*\n\n- Cheap, fast, low-fidelity artefacts to make the idea tangible.\n- The prototype is a tool for learning, not the final product.\n\n**5. Test** : *\"Engage in a continuous short-cycle innovation process to continually improve your design.\"*\n\n- Put the prototype in front of real users, observe, collect feedback.\n- Feed results back into earlier steps.\n\nAlongside this, both decks frame the process inside the **Double Diamond** (VO_03 p. 7, Module 1 p. 22-29): *Discover → Define → Develop → Deliver*, i.e. diverge to understand, converge on the problem, diverge on solutions, converge on the one to ship.\n\n## Why the process is a repeating cycle, not a linear programme\n\nThe slides are explicit on this. Four reasons, all taken directly from the decks:\n\n- **The definition itself is iterative.** Design Thinking = \"extensive human-centred research and **iterative prototyping**\" (VO_03 p. 3, Module 1 p. 19). Iteration is built into the definition.\n- **The Test step is defined as a loop.** Test is not an end-point but \"a **continuous short-cycle** innovation process to continually improve your design\" (Module 1 p. 29, VO_03 p. 8). Results flow back into Empathize / Define / Ideate / Prototype.\n- **Course rule 6**: \"Work in an iterative and interdisciplinary way: more steps and more perspectives make you stronger\" (Module 1 p. 35-36). It is listed as one of the standing rules of the method.\n- **Fail fast, learn fast / Fail early and kill your darlings** (VO_03 p. 3-4 guidelines, Module 1 p. 34). Early failure is only valuable if the process lets you *go back* and adjust: that is exactly what a cycle allows and a linear programme does not.\n\nPractical consequences of being cyclic:\n\n- Test results can send you back to *Define* (the problem was wrong), to *Ideate* (the idea doesn't work) or to *Prototype* (the artefact is the issue).\n- It fits wicked / ambiguous problems where the right solution cannot be known up front.\n- It enforces humility: you assume your first framing is incomplete.\n\n## Short summary\n\nThe Design Thinking process has **five steps**: **Empathize** (understand users), **Define** (sharpen the problem), **Ideate** (generate solution options), **Prototype** (make ideas tangible cheaply), **Test** (run the prototype with users and learn). It is framed inside the **Double Diamond** (Discover, Define, Develop, Deliver). The process is run as a **repeating cycle**, not linear, because the method itself is defined around iterative prototyping and \"continuous short-cycle\" testing, because one of the explicit rules is \"work in an iterative and interdisciplinary way\", and because the \"fail fast, kill your darlings\" mindset only pays off if you can loop back to earlier steps after each test.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "VO_03_Design-Thinking-Recap.pdf",
+          "pages_raw": "3-4, 7-9"
+        },
+        {
+          "file": "241104_Design Thinking_Module1.pdf",
+          "pages_raw": "3, 22, 26-29, 34-35, 38"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 25,
+      "courses": [
+        "DT"
+      ],
+      "question": "Describe 3 different methods to collect insights during the \"Empathy\"-Stage in the Design Thinking Process. What are the strengths and weaknesses of each of these methods?",
+      "answer_markdown": "Three useful methods in the Empathy stage are `observation`, `individual depth interviews`, and `focus groups / customer communities`.\n\n## 1. Observation\nExample: `Fly on the Wall`, mystery shopping, eye-tracking.\n\nPurpose:\nObserve what people actually do in their real context without mainly relying on what they say.\n\nStrengths:\n- Captures real behavior instead of self-reported behavior.\n- Useful when people cannot explain their actions well.\n- Can reveal hidden routines, pain points, and context factors.\n- Works even when language barriers exist.\n\nWeaknesses:\n- Shows `what` people do, but often not fully `why` they do it.\n- Interpretation can be subjective.\n- Hidden observation can raise ethical issues.\n- Can be time-consuming to plan, document, and interpret.\n\n## 2. Individual Depth Interview\nPurpose:\nHave a detailed one-on-one conversation to understand motives, language, pains, gains, and product usage patterns.\n\nStrengths:\n- Gives deep insight into motivations, attitudes, and needs.\n- Good for understanding the user's own words and mental models.\n- Flexible: the interviewer can ask follow-up questions.\n- Especially useful for sensitive or complex topics.\n\nWeaknesses:\n- Answers depend on self-report, so people may forget, simplify, or present themselves positively.\n- Interviewer bias can influence responses.\n- Usually small samples, so results are not broadly generalizable.\n- Preparation and analysis take effort.\n\n## 3. Focus Group / Customer Community\nPurpose:\nDiscuss experiences and opinions with several users together to explore shared themes and differences.\n\nStrengths:\n- Efficient way to collect many perspectives in one session.\n- Group interaction can trigger ideas, memories, and reactions that would not appear in a solo interview.\n- Helpful for identifying common pains, gains, and language.\n\nWeaknesses:\n- Dominant participants can influence the group.\n- People may conform and hide unpopular opinions.\n- Less depth per person than an individual interview.\n- Sensitive topics may not be discussed openly.\n\n## Short Comparison\n- `Observation` is strongest for real behavior in context.\n- `Depth interviews` are strongest for understanding motives and feelings.\n- `Focus groups / customer communities` are strongest for collecting multiple viewpoints efficiently.\n\nIn an exam answer, a strong conclusion is: observation reveals behavior, interviews reveal motives, and focus groups reveal shared patterns and differences across users.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "241024_Design Thinking_Module2.pdf",
+          "pages_raw": "84-90"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 26,
+      "courses": [
+        "DT"
+      ],
+      "question": "What is the difference between a high and a low fidelity prototype? Describe two specific prototyping methods that represent each of these types.",
+      "answer_markdown": "## Fidelity in a prototype\n\nIn the Module 5 deck, **fidelity** is treated as a deliberate choice, \"Choose the fidelity\" is one of the steps when planning a prototype (p. 13). Fidelity refers to **how close the prototype is to the finished product** in terms of detail, look, feel and interactivity.\n\n- **Low-fidelity** prototype: rough, cheap, quick to build, not interactive (or only minimally). Goal is to *explore, communicate and collaborate*, to check the basic idea or value proposition.\n- **High-fidelity** prototype: polished, looks and behaves close to the real product, often clickable / usable. Goal is to *evaluate, present, persuade*, to test usability, desirability and viability more rigorously.\n\nTrade-off from the deck: low-fi is fast and iteration-friendly but limited in what it can test; high-fi gives richer feedback but takes time and is \"useless if your prototype does not create any value for your customers\" (p. 11-12).\n\n## Two low-fidelity methods\n\n**1. Paper Mockups (p. 23-24)**\n\n- Hand-drawn screens, flows or interfaces on paper.\n- *\"Can be done quickly by anyone; iterations easily possible.\"*\n- Tools mentioned: Marvel app to bring paper screens to life.\n- Use: sketching UI layouts and user flows before any code is written.\n\n**2. Wireframing (p. 25)**\n\n- Explicitly described in the slide as a *\"Simple, low-fidelity prototype for digital products.\"*\n- Usually non-interactive: shows structure, layout and key buttons, not visual styling.\n- Use: agreeing on information architecture and screen layout across the team.\n\n(Also in this family on the earlier slides: Mood Board p. 17, Storyboard p. 18.)\n\n## Two high-fidelity methods\n\n**1. Click Dummy (p. 26)**\n\n- Explicitly described as *\"Higher fidelity and often clickable version of an interface.\"*\n- Users can navigate between screens, so realistic flow and interaction can be tested.\n- Typically built in tools like Figma (referenced on the same page).\n\n**2. Mock Sale & Infiltrator Technique (p. 71)**\n\n- Explicitly described as *\"Create a high fidelity prototype and place it in a store shelf. See how people are interacting with the prototype.\"*\n- The product looks real enough that shoppers treat it as a real product on a shelf.\n- Tests desirability in a realistic purchase environment.\n\n(Wizard of Oz, p. 22, is another high-fi-feeling method: the user thinks they are using a working product while a hidden operator drives it.)\n\n## Short summary\n\n**Low-fidelity** = rough, cheap, fast, mainly for *exploring and iterating*, e.g. **Paper Mockups** (p. 23-24) and **Wireframing** (p. 25, explicitly \"low-fidelity prototype for digital products\"). **High-fidelity** = polished, realistic, mainly for *evaluating and persuading*, e.g. **Click Dummy** (p. 26, explicitly \"higher fidelity and often clickable\") and **Mock Sale & Infiltrator Technique** (p. 71, explicitly \"high fidelity prototype\"). The Module 5 deck frames fidelity as a conscious choice, matched to what you still need to learn: lower fidelity early to iterate, higher fidelity later to test realistic behaviour.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "241119_Design Thinking_Module5.pdf",
+          "pages_raw": "13, 17-18, 22-26, 71"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 27,
+      "courses": [
+        "DT"
+      ],
+      "question": "Describe the main steps of a usability test. Why is it important to test your solution with users?",
+      "answer_markdown": "A usability test is usually a 1:1 test with real users to see whether they can complete relevant tasks with the product.\n\n## Main steps of a usability test\n\n1. Define the research goals and usability questions.\n   Clarify what you want to learn, for example whether users can find information, navigate intuitively, complete the workflow, and how satisfied they feel.\n2. Prepare the test.\n   Create realistic scenarios and tasks, prepare questions, schedule the sessions, run a pilot test, and check the test environment and equipment.\n3. Recruit representative test persons.\n   Select users from the target group so the results are meaningful.\n4. Brief the participant.\n   Welcome them, explain the procedure, collect consent/background information, and introduce methods such as thinking aloud.\n5. Run the tasks and observe.\n   Give tasks step by step, watch how the participant works, record time, problems, comments, and other critical data, and avoid helping too much.\n6. Collect post-test feedback.\n   Use a post-test questionnaire and debriefing to capture perceptions, confusion, likes, dislikes, and ideas.\n7. Analyse the results and derive improvements.\n   Compare the findings with the usability goals, especially effectiveness, efficiency, and satisfaction, identify why problems occurred, and use this to improve the design.\n\n## Why it is important to test with users\n\n- It shows whether people can actually use the solution, not just whether the team thinks it should work.\n- It uncovers usability problems, wrong assumptions, and points where users get confused.\n- It reveals why usability goals are not achieved and what should be changed.\n- It helps avoid building the wrong thing and supports evidence-based iteration.\n\nIn short: testing with users validates the solution in real use and provides concrete input for improving it.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "241119_Design Thinking_Module5.pdf",
+          "pages_raw": "52-66, 69"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 28,
+      "courses": [
+        "DT"
+      ],
+      "question": "Visualisation, eg during ideation and prototyping is critical for Design Thinking. What are specific advantages of visualising your ideas as early as possible (name at least five)?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "241119_Design Thinking_Module5.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 29,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "What is the classical triad of algorithm ethics? Can you briefly talk about each of its parts and what they each entail? What other aspects of algorithm ethics are there which are not covered by the triad?",
+      "answer_markdown": "The classical triad of algorithm ethics is **transparency, accuracy, and accountability**.\n\nUseful memory aid:\n- **Transparency** = can we understand what the system does?\n- **Accuracy** = does it work correctly and reliably enough?\n- **Accountability** = who is responsible, and how can compliance be shown?\n\n## The Triad\n\n### 1. Transparency\nTransparency means that affected persons, professionals, and regulators should receive essential information about the AI system and its data processing.\n\nIt includes:\n- information about the system's purpose, operation, and consequences\n- traceability and, where possible, explainability\n- communication about performance limits, testing, and relevant system properties\n\nWhy it matters:\n- people can only exercise their rights, challenge decisions, or use the system appropriately if they understand enough about it\n- it helps reduce the \"black box\" problem, even if full explanation is not always possible\n\n### 2. Accuracy\nAccuracy means that the AI system should produce sufficiently correct, reliable outputs for its intended purpose.\n\nIt includes:\n- accurate and up-to-date data where relevant\n- appropriate performance metrics\n- robustness against errors, faults, and problematic situations\n- validation and testing of the system\n\nWhy it matters:\n- inaccurate systems can produce unfair, incorrect, or discriminatory outcomes\n- accuracy is therefore not just a technical issue, but also an ethical one\n\n### 3. Accountability\nAccountability means that a responsible actor must be identifiable and able to demonstrate compliance with legal and ethical requirements.\n\nIt includes:\n- documentation and record-keeping\n- monitoring, auditing, and traceability\n- quality-management processes\n- reporting of incidents or malfunctions\n- clear allocation of responsibilities and mechanisms for correction or redress\n\nWhy it matters:\n- if harm occurs, it must be clear who answers for it and how problems are detected and fixed\n\n## What The Triad Does Not Fully Cover\n\nThe triad is important, but it does **not** cover the whole field of algorithm ethics. The slides point to broader frameworks for trustworthy AI. Additional important aspects include:\n\n- **fairness and non-discrimination**: avoiding unfair bias, unequal treatment, and stigmatization\n- **explainability / explicability**: related to transparency, but more specifically about making decisions understandable\n- **human autonomy and oversight**: humans should remain able to make meaningful choices and supervise AI systems\n- **prevention of harm / safety**: systems should not cause physical, mental, social, or institutional harm\n- **privacy and data governance**: respect for privacy, data quality, data integrity, and access rules\n- **technical robustness and security**: resilience against attacks, faults, and misuse\n- **societal and environmental well-being**: effects on democracy, society, sustainability, and the environment\n- **stakeholder participation and redress**: involving affected groups and providing remedies when things go wrong\n\n## Short Exam Version\n\nThe classical triad of algorithm ethics consists of **transparency, accuracy, and accountability**. Transparency requires that the functioning and implications of an AI system are communicated in an understandable way. Accuracy requires that the system works correctly and reliably enough for its intended purpose and does not generate avoidable errors. Accountability requires that responsible actors can be identified and can prove compliance through documentation, monitoring, and oversight. The triad does not fully cover other major ethical concerns such as fairness and non-discrimination, explainability, human autonomy, privacy and data governance, safety and robustness, and societal or environmental impacts.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Slides 2_Ethics and Law_2024-25_Rothmann.pdf",
+          "pages_raw": "67, 73-89"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 30,
+      "courses": [
+        "FRDE",
+        "AI"
+      ],
+      "question": "What is the difference between cognitive and statistical bias? Name examples for both.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Slides 2_Ethics and Law_2024-25_Rothmann.pdf",
+          "pages_raw": ""
+        },
+        {
+          "file": "AI_DataEngineeringVisualization_2024.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 31,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "What are the main issues when it comes to algorithmic decision support and accountability/responsibility?",
+      "answer_markdown": "Algorithmic decision support creates accountability problems because decisions may be partly automated, but responsibility still has to remain identifiable, explainable, and challengeable.\n\n## Main issues\n\n- **Unclear allocation of responsibility:** It may be unclear whether responsibility lies with the developer/provider, the deploying organisation, or the human user. A key requirement is that the accountable entity for an AI-supported decision must be identifiable.\n- **Opacity / \"black box\" problem:** Many systems are hard to explain. If the logic of a decision cannot be made understandable, it becomes difficult to justify the result and to check whether it respected rights and legal principles.\n- **Need for auditability and traceability:** Accountability requires mechanisms to monitor AI-based decisions and outcomes, document how they were reached, and demonstrate compliance in audits or reviews.\n- **Bias, discrimination, and errors:** AI systems can produce unfair or incorrect outcomes. Accountability therefore includes ongoing evaluation to detect and rectify biases, errors, and unintended consequences.\n- **Need for human oversight:** Decision support should not replace meaningful human control. Humans must remain able to supervise, question, and, if necessary, override the system.\n- **Reporting harm and redress:** Trustworthy AI requires minimising and reporting negative impacts, considering trade-offs, and providing redress when people are adversely affected.\n- **Governance and documentation duties:** Accountability is not just moral but organisational: quality management, testing, record-keeping, incident reporting, and clearly assigned internal responsibilities are needed.\n\n## Short exam summary\n\nThe core problem is that AI-supported decisions can be opaque, biased, and hard to contest, while responsibility is often spread across several actors. Therefore, trustworthy decision support needs clear responsibility, transparency/traceability, human oversight, monitoring, and effective redress.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Slides 2_Ethics and Law_2024-25_Rothmann.pdf",
+          "pages_raw": "68, 72-73, 84-90"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 32,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "Define scientific research and discuss the core criteria that an activity must fulfill in order to be classified as scientific research.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Slides 3_Philosophy of Science_DPIA_2024-25_Rothmann.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 33,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "Critically examine the relationship between law and ethics. In your answer, clearly distinguish between the two concepts and explain their points of overlap and divergence.",
+      "answer_markdown": "Law and ethics are related, but they are not identical. Both are **normative disciplines** because they guide human behaviour and deal with what ought to be done. However, law is a specifically legal order created and enforced by the state, whereas ethics evaluates whether conduct is morally right or wrong.\n\n**Distinction**\n- **Law** consists of positive norms enacted by authorised state bodies in a formal procedure.\n- It is backed by coercion: the state can attach sanctions such as fines or imprisonment.\n- Following Max Weber, law is distinguished by a `Rechtsstab`, that is, an institutional apparatus that enforces compliance through coercion.\n- **Ethics** is grounded in conscience, reason, and moral reflection rather than state enactment.\n- Following Kant, ethics concerns a person's **inner attitude** and inner duty, while law mainly requires the **external conformity** of behaviour with legal rules.\n- Ethical, religious, or social norms may also be sanctioned, but usually only informally through blame, contempt, or social pressure.\n\n**Overlap**\n- Law and ethics overlap because legal systems often embody moral ideas.\n- The slides explicitly link law to values such as **justice, freedom, equality, and human dignity**.\n- Ethics therefore influences the content and interpretation of law, especially in constitutional and human-rights contexts.\n\n**Divergence**\n- What is lawful is not always ethical, and what is ethical is not always lawful.\n- The clearest example in the slides is **apartheid**: it was legally permitted, but morally wrong.\n- This shows that formal legal validity does not automatically guarantee moral legitimacy.\n- Radbruch's formula sharpens this point: law that is intolerably unjust and denies the basic equality of persons may count as **legal injustice** and lose its claim to obedience.\n\n**Critical Assessment**\n- The relationship is best understood as one of **partial overlap**, not identity.\n- A separation between law and ethics is important because law needs legal certainty, formal validity, and enforceability.\n- But a complete separation is dangerous, because it can make even deeply unjust rules appear acceptable merely because they were validly enacted.\n- Ethics therefore serves as a critical standard for judging law, while law gives some ethical principles institutional form and enforceable effect.\n\n**Exam Formula**\nLaw and ethics are both normative disciplines, but law is state-made and coercively enforced, while ethics is grounded in conscience and moral reasoning; they overlap in values such as justice and human dignity, yet diverge because legality and morality do not always coincide.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Slides 2_Ethics and Law_2024-25_Rothmann.pdf",
+          "pages_raw": "4-6, 11, 16"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 34,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "Explain Immanuel Kant's concept of the categorical imperative. Discuss its central formulations and demonstrate its application using a concrete example.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Slides 1_Ethics-Introduction-Theories-Dilemma_2024-25_Rothmann.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 35,
+      "courses": [
+        "FRDE",
+        "ITG"
+      ],
+      "question": "Identify and discuss the key ethical principles for trustworthy artificial intelligence as proposed by the European Union. Evaluate their significance in the context of modern AI systems.",
+      "answer_markdown": "The EU High-Level Expert Group (HLEG) identifies seven key requirements for trustworthy AI:\n\n1. Human agency and oversight: AI should support human autonomy rather than replace human judgment completely. People must be able to supervise, intervene, or override systems when necessary.\n2. Technical robustness and safety: AI should be reliable, secure, accurate, resilient to attacks, and safe in operation, with fallback plans if something goes wrong.\n3. Privacy and data governance: Personal data must be protected, and data should be collected, managed, and accessed responsibly. Data quality and integrity are part of this requirement.\n4. Transparency: AI systems should be traceable and explainable enough that people understand when AI is being used and on what basis decisions are made.\n5. Diversity, non-discrimination, and fairness: AI should avoid unfair bias and work fairly across different groups, with attention to accessibility and inclusive design.\n6. Environmental and societal well-being: AI should benefit society, democracy, and the environment rather than create broader social or ecological harm.\n7. Accountability: There must be clear responsibility for AI outcomes, including auditability, monitoring, reporting of harms, and possibilities for redress.\n\nSignificance for modern AI systems:\n\n- These principles remain highly important because current AI systems are deployed at scale in sensitive areas such as hiring, finance, healthcare, education, security, and public administration.\n- Human oversight is essential because modern systems can automate or strongly influence high-stakes decisions, but still make errors, reflect poor assumptions, or be misused.\n- Robustness and safety are especially important for systems that can hallucinate, fail unpredictably, or be attacked through adversarial inputs, data poisoning, or prompt manipulation.\n- Privacy and data governance matter because many AI systems depend on large datasets, often containing personal or sensitive information.\n- Transparency and accountability are critical because many advanced models are difficult to interpret; without documentation and traceability, it is hard to challenge decisions or assign responsibility.\n- Fairness is central because biased training data can reproduce or amplify discrimination against underrepresented groups.\n- Environmental and societal well-being has become more significant as large-scale AI consumes substantial computing resources and can affect public discourse, democratic processes, and labor markets.\n\nEvaluation: the EU principles are significant because they turn AI ethics into practical design and governance requirements. They provide a strong framework for assessing whether AI is not only effective, but also socially acceptable and legally defensible. Their main limitation is that they are high-level and can conflict in practice, for example transparency versus privacy or accuracy versus fairness. Therefore, modern AI systems need these principles to be operationalized through testing, documentation, oversight, and regulation rather than treated as abstract ideals.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Slides 2_Ethics and Law_2024-25_Rothmann.pdf",
+          "pages_raw": "68"
+        },
+        {
+          "file": "INFO_ITG_Kieseberg.pdf",
+          "pages_raw": "67"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 36,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "Compare and contrast utilitarian ethics and deontological ethics. In your answer, outline the fundamental principles of each theory and refer to key representatives.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Slides 1_Ethics-Introduction-Theories-Dilemma_2024-25_Rothmann.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 37,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "To what extent can utilitarian and deontological ethics provide adequate frameworks for addressing ethical challenges in digital technologies? Discuss with reference to concrete examples.",
+      "answer_markdown": "Utilitarian and deontological ethics are both useful for digital ethics, but each is only partly adequate on its own. Utilitarianism is strong when we need to assess the large-scale consequences of digital systems; deontology is strong when we need to protect rights, dignity, and moral limits that should not be overridden simply because a system is efficient.\n\n## Utilitarian ethics\n\nUtilitarianism is a teleological theory: an action is right if it produces the greatest net benefit for the broadest community. This is helpful in digital technology because many systems operate at scale and affect millions of users at once.\n\nUseful applications:\n- platform content moderation: reducing misinformation, abuse, or incitement can be justified if it lowers overall social harm\n- cybersecurity and fraud detection: intrusive monitoring may be defended if it prevents greater damage to many users\n- autonomous systems: designers may compare outcomes in order to minimize total harm\n\nStrengths:\n- fits cost-benefit reasoning in technology policy and design\n- helps compare different system outcomes\n- takes collective welfare seriously\n\nLimits:\n- it can justify harmful acts if overall utility appears higher\n- it is weak on justice, human rights, and minority protection\n- digital harms are often hard to aggregate: privacy loss, manipulation, chilling effects, bias, and dignity are not easily commensurable\n\nExample: A company might justify large-scale user tracking because it improves personalization, safety, and profit for most users. A utilitarian approach can explain that decision, but it may underplay the fact that people are being surveilled or manipulated without meaningful consent.\n\n## Deontological ethics\n\nDeontology is a duty-based theory associated with Kant. It judges actions by whether they follow universal moral rules, not by their consequences alone. It is especially relevant in digital ethics because it protects persons from being treated merely as tools.\n\nUseful applications:\n- privacy and data protection: people should not be used merely as data sources\n- informed consent: users must not be deceived by dark patterns or hidden data practices\n- AI fairness: systems should not discriminate or instrumentalize persons for efficiency gains\n\nStrengths:\n- gives clear limits against lying, manipulation, and exploitation\n- protects dignity, autonomy, and rights\n- is a strong critique of surveillance capitalism and non-consensual facial recognition\n\nLimits:\n- it can be rigid when duties conflict\n- it is difficult to apply in probabilistic AI systems where outcomes are uncertain\n- strict rules do not always tell us how to choose between two harmful options\n\nExample: A deontological critique of facial recognition in public spaces would stress that individuals are monitored and categorized without consent, and may be treated as mere means to security or efficiency goals. Even if the system improves safety, that does not automatically make it morally acceptable.\n\n## Concrete digital example: autonomous vehicles\n\nThe trolley-style self-driving car case shows the tension clearly. A utilitarian approach favors the action that saves the most lives overall. A deontological approach resists directly harming an uninvolved person even to produce a better aggregate outcome. This shows why both theories are relevant, but also why neither gives an easy complete answer for real digital systems.\n\n## Overall assessment\n\nThe best answer is: both frameworks are adequate to an important but limited extent.\n\n- Utilitarianism is valuable for evaluating large-scale social consequences of digital technologies.\n- Deontology is valuable for setting moral side-constraints and protecting rights.\n- Neither framework alone fully captures the complexity of digital ethics, especially where issues of justice, autonomy, consent, bias, and uncertain AI outcomes overlap.\n\nIn practice, digital ethics often combines both approaches in a hybrid or principle-based way: consequences matter, but some duties and rights must also constrain what designers, platforms, and states are allowed to do.\n\n## Exam-ready conclusion\n\nUtilitarianism and deontology are best seen as complementary rather than sufficient on their own. Utilitarianism helps assess overall harms and benefits in digital systems, while deontology protects persons against being sacrificed for efficiency or convenience. For ethical challenges such as surveillance, AI decision-making, and autonomous vehicles, the most convincing approach is usually a hybrid one that uses both outcome-based reasoning and rights-based limits.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Slides 1_Ethics-Introduction-Theories-Dilemma_2024-25_Rothmann.pdf",
+          "pages_raw": "28-32, 35-41, 70"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 38,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "Define scientific research and discuss the core criteria that an activity must fulfil in order to be classified as scientific research.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Slides 3_Philosophy of Science_DPIA_2024-25_Rothmann.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 39,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "Critically examine the relationship between law and ethics. In your answer, clearly distinguish between the two concepts and explain their points of overlap and divergence.",
+      "answer_markdown": "Law and ethics are closely related, but they are not the same. Both are **normative disciplines** because they guide behaviour and deal with what ought to be done. However, law is a formal legal order created and enforced by the state, whereas ethics evaluates whether conduct is morally right or wrong.\n\n**Distinction**\n- **Law** consists of positive norms enacted by authorised state bodies in a formal procedure.\n- It is backed by state coercion and sanctions such as fines or imprisonment.\n- Following Max Weber, law is distinguished by a `Rechtsstab`, meaning an institutional apparatus that enforces compliance through coercion.\n- **Ethics** is grounded in conscience, reason, and moral reflection rather than state enactment.\n- Following Kant, ethics concerns a person's **inner attitude** and inner duty, while law mainly requires the **external conformity** of behaviour with legal rules.\n- Ethical, religious, and social norms can also be sanctioned, but usually only informally through blame, repentance, or social disapproval.\n\n**Overlap**\n- Law and ethics overlap because legal systems often incorporate moral ideas.\n- The slides explicitly connect law with values such as **justice, freedom, equality, and human dignity**.\n- Ethics therefore influences both the content of legal norms and their interpretation, especially in constitutional and human-rights law.\n\n**Divergence**\n- What is lawful is not always ethical, and what is ethical is not always lawful.\n- The clearest example in the slides is **apartheid**: it was legally permitted, but morally wrong.\n- This shows that formal legal validity does not automatically guarantee moral legitimacy.\n- Radbruch's formula sharpens this point: law that is **intolerably unjust** and denies the basic equality of all persons may count as **legal injustice**.\n\n**Critical Assessment**\n- The relationship is best understood as one of **partial overlap**, not identity.\n- A separation between law and ethics is important because law needs legal certainty, formal validity, and enforceability.\n- But a complete separation is dangerous, because it can make deeply unjust rules appear acceptable merely because they were validly enacted.\n- Ethics therefore acts as a critical standard for judging law, while law gives some ethical principles institutional and enforceable form.\n\n**Exam Formula**\nLaw and ethics are both normative disciplines, but law is state-made and coercively enforced, while ethics is grounded in conscience and moral reasoning; they overlap in values such as justice and human dignity, yet diverge because legality and morality do not always coincide.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Slides 2_Ethics and Law_2024-25_Rothmann.pdf",
+          "pages_raw": "4-6, 11, 16"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 40,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "Explain Immanuel Kant's concept of the categorical imperative. Discuss its central formulations and demonstrate its application using a concrete example.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Slides 1_Ethics-Introduction-Theories-Dilemma_2024-25_Rothmann.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 41,
+      "courses": [
+        "FRDE",
+        "ITG"
+      ],
+      "question": "Identify and discuss the key ethical principles for trustworthy artificial intelligence as proposed by the European Union. Evaluate their significance in the context of modern AI systems.",
+      "answer_markdown": "The EU High-Level Expert Group (HLEG) identifies seven key requirements for trustworthy AI:\n\n1. Human agency and oversight: AI should support human autonomy rather than replace human judgment completely. People must be able to supervise, intervene, or override systems when necessary.\n2. Technical robustness and safety: AI should be reliable, secure, accurate, resilient to attacks, and safe in operation, with fallback plans if something goes wrong.\n3. Privacy and data governance: Personal data must be protected, and data should be collected, managed, and accessed responsibly. Data quality and integrity are part of this requirement.\n4. Transparency: AI systems should be traceable and explainable enough that people understand when AI is being used and on what basis decisions are made.\n5. Diversity, non-discrimination, and fairness: AI should avoid unfair bias and work fairly across different groups, with attention to accessibility and inclusive design.\n6. Environmental and societal well-being: AI should benefit society, democracy, and the environment rather than create broader social or ecological harm.\n7. Accountability: There must be clear responsibility for AI outcomes, including auditability, monitoring, reporting of harms, and possibilities for redress.\n\nSignificance for modern AI systems:\n\n- These principles remain highly important because current AI systems are deployed at scale in sensitive areas such as hiring, finance, healthcare, education, security, and public administration.\n- Human oversight is essential because modern systems can automate or strongly influence high-stakes decisions, but still make errors, reflect poor assumptions, or be misused.\n- Robustness and safety are especially important for systems that can hallucinate, fail unpredictably, or be attacked through adversarial inputs, data poisoning, or prompt manipulation.\n- Privacy and data governance matter because many AI systems depend on large datasets, often containing personal or sensitive information.\n- Transparency and accountability are critical because many advanced models are difficult to interpret; without documentation and traceability, it is hard to challenge decisions or assign responsibility.\n- Fairness is central because biased training data can reproduce or amplify discrimination against underrepresented groups.\n- Environmental and societal well-being has become more significant as large-scale AI consumes substantial computing resources and can affect public discourse, democratic processes, and labor markets.\n\nEvaluation: the EU principles are significant because they turn AI ethics into practical design and governance requirements. They provide a strong framework for assessing whether AI is not only effective, but also socially acceptable and legally defensible. Their main limitation is that they are high-level and can conflict in practice, for example transparency versus privacy or accuracy versus fairness. Therefore, modern AI systems need these principles to be operationalized through testing, documentation, oversight, and regulation rather than treated as abstract ideals.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Slides 2_Ethics and Law_2024-25_Rothmann.pdf",
+          "pages_raw": "68"
+        },
+        {
+          "file": "INFO_ITG_Kieseberg.pdf",
+          "pages_raw": "67"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 42,
+      "courses": [
+        "FRDE"
+      ],
+      "question": "Compare and contrast utilitarian ethics and deontological ethics. In your answer, outline the fundamental principles of each theory and refer to key representatives",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Slides 1_Ethics-Introduction-Theories-Dilemma_2024-25_Rothmann.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 43,
+      "courses": [
+        "ITG"
+      ],
+      "question": "AI-Act: Provide a short overview on its purpose. Describe the risk-based approach and provide 6 requirements for providers and 3 for users of high-risk AI systems.",
+      "answer_markdown": "The EU AI Act creates harmonised rules for the development, placing on the market, and use of AI in the EU. Its main aims are to ensure that AI systems on the EU market are safe and lawful, create legal certainty for innovation and investment, improve governance and enforcement, and support a single market for lawful, safe, and trustworthy AI.\n\n## Risk-Based Approach\n\nThe AI Act follows a risk-based model, so the stricter the possible impact on safety and fundamental rights, the stricter the obligations.\n\n- **Unacceptable risk:** prohibited entirely. The slides give examples such as social scoring by public authorities, manipulation or exploitation of vulnerable groups, and real-time remote biometric identification in public spaces for law enforcement.\n- **High risk:** subject to the strongest requirements. This includes AI that is part of certain regulated products and AI systems listed in Annex III, such as automated hiring or biometric identification systems.\n- **Limited risk:** mainly subject to transparency duties, for example chatbots, deep fakes, and emotion-recognition systems.\n- **Minimal risk:** generally unregulated, although voluntary codes of conduct are encouraged.\n\n## 6 Requirements For Providers Of High-Risk AI Systems\n\n- **Risk management:** providers must implement a risk-management system covering the whole AI lifecycle.\n- **Data and data governance:** training, validation, and test data must be properly governed and should be relevant, representative, free of errors, and complete.\n- **Technical documentation:** documentation must be prepared before the system is placed on the market and kept up to date.\n- **Record-keeping and logging:** the system must support traceability through logging.\n- **Transparency and human oversight:** users must be able to interpret outputs, receive instructions for use, and the system must allow effective human oversight.\n- **Accuracy, robustness, and cybersecurity:** the system must achieve an appropriate level of performance and be resilient against faults, errors, and attacks.\n\nThe slides also mention further provider duties such as conformity assessment, corrective action, a quality-management system, and registration in an EU database.\n\n## 3 Requirements For Users Of High-Risk AI Systems\n\n- **Use according to instructions:** users must operate the system in line with the instructions for use.\n- **Relevant input data:** where users control the input data, they must ensure it is relevant for the intended purpose.\n- **Monitor and report:** users must monitor the system, report risks or security incidents to the provider, and suspend use if necessary.\n\nOverall, the AI Act combines innovation policy with rights protection: high-risk AI is not banned, but it is only allowed if strong governance, documentation, oversight, and safety requirements are met.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "INFO_ITG_Kieseberg.pdf",
+          "pages_raw": "23, 38-41, 44, 46-47"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 44,
+      "courses": [
+        "ITG"
+      ],
+      "question": "Provide the definition of Trustworthy AI as given by the HLEG. Explain the concept of Controllable AI.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "INFO_ITG_Kieseberg.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 45,
+      "courses": [
+        "ITG"
+      ],
+      "question": "Provide and explain the eight strategies proposed by ENISA for implementing Privacy by Design in practice.",
+      "answer_markdown": "ENISA translates Privacy by Design into eight practical strategies. The core idea is that privacy should be built into the system architecture and development process from the start, not added afterwards.\n\n## The 8 Strategies\n\n- **MINIMISE:** collect and process only the data that is actually necessary. This follows the GDPR principle of data minimization.\n- **HIDE:** keep personal data and the links between personal data hidden as much as possible.\n- **SEPARATE:** process personal data separately or in a distributed way where possible, so that everything is not concentrated in one place.\n- **AGGREGATE:** use the highest possible level of aggregation that still allows the intended processing.\n- **INFORM:** make sure data subjects are informed when their data is processed and understand what is happening.\n- **CONTROL:** give data subjects control over their data, for example through consent, correction, or deletion rights.\n- **ENFORCE:** ensure that data-protection rules are actually implemented and enforced inside the system and organisation.\n- **DEMONSTRATE:** make compliance verifiable through documentation, TOMs, and similar evidence.\n\n## Why They Matter\n\nThese strategies turn the abstract idea of Privacy by Design into concrete design guidance. In short, they tell developers to collect less, reveal less, connect less, empower users more, and make compliance provable.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "INFO_ITG_Kieseberg.pdf",
+          "pages_raw": "81-85"
+        },
+        {
+          "file": "INFO_ITG_Kieseberg_20250407.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 46,
+      "courses": [
+        "ITG"
+      ],
+      "question": "Define k-anonymity and explain record linkage and homogeneity attack. What can be done against the latter?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "INFO_ITG_Kieseberg.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 47,
+      "courses": [
+        "ITG"
+      ],
+      "question": "Explain the concept of l-diversity, provide two different approaches and discuss drawbacks and practical implementation problems. What is the difference to t-closeness?",
+      "answer_markdown": "**l-diversity** is an extension of **k-anonymity**. Its goal is that sensitive values inside each equivalence class should be distributed well enough that an attacker still cannot learn too much about a person even after narrowing the person down to that class.\n\nThe key question is therefore: what counts as **well distributed**?\n\n## Approaches\n\n- **Distinct l-diversity:** each equivalence class must contain at least `l` different sensitive values.\n- **Entropy l-diversity:** not only the number of values matters, but also how evenly they are distributed; entropy is used as the measure.\n- **Recursive (c,l)-diversity:** the most frequent sensitive value must not dominate too strongly compared with the less frequent ones.\n\nTwo common approaches to mention in an exam are **distinct l-diversity** and **entropy l-diversity**.\n\n## Drawbacks And Practical Problems\n\n- Distinct l-diversity can still leak sensitive information if one value is much more likely than the others.\n- Different sensitive values may still have almost the same meaning, for example different types of cancer.\n- Data quality often drops strongly because more generalization or suppression is needed.\n- It becomes even harder when there is more than one sensitive attribute.\n- Rare values are a major problem because they make l-diversity difficult or impossible to achieve.\n- Entropy l-diversity is mathematically more complex and hard to interpret in practice.\n- Even belonging to an equivalence class can already reveal something sensitive, for example that a person is a cancer patient.\n\n## Difference To T-Closeness\n\nl-diversity only looks at the distribution **inside one equivalence class**. It does not check whether that class distribution is similar to the distribution in the **whole table**.\n\nThis is exactly why the **similarity attack** is possible: a class may satisfy l-diversity, but the values can still all be very similar, for example all indicating low income.\n\n**t-closeness** fixes this by requiring that the distribution of the sensitive attribute in each equivalence class must stay close to the distribution in the whole table, with a maximum distance of `t`.\n\nSo:\n\n- **l-diversity:** enough diversity inside the class\n- **t-closeness:** class distribution must also stay close to the global distribution\n\nt-closeness is therefore stronger, but also even harder to achieve in practice.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "INFO_ITG_Kieseberg.pdf",
+          "pages_raw": "119-133"
+        },
+        {
+          "file": "ITG_DataGovernance2_V1.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 48,
+      "courses": [
+        "ITG"
+      ],
+      "question": "Define basic Bloom filters and discuss usage and characteristics. Give an example for their utilization and how they can enhance performance.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Bloom_Filters.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 49,
+      "courses": [
+        "ITG"
+      ],
+      "question": "What is Data Cleansing and why is it used? Discuss the impact of different cleansing strategies. Discuss resilient Data Cleansing.",
+      "answer_markdown": "**Data cleansing** means making data usable according to the requirements of later processing. It is used to deal with data that is undefined, unspecified, uninterpretable, or unexpected, and generally to improve data quality or satisfy organisational and regulatory requirements.\n\n## Why It Is Used\n\n- remove or repair problematic records\n- improve data quality before analysis or AI use\n- make data fit the intended processing task\n- support related steps such as enrichment, combination of streams, anonymization, or pseudonymization\n\n## Impact Of Different Cleansing Strategies\n\nThe impact can be large. The slides describe experiments in data anonymization where different implementations produced different record counts on the same base data, with differences of up to **10%**. The reason was data cleansing.\n\nThis shows that cleansing is not neutral:\n\n- dropping records changes the population being analysed\n- changing values can change later statistics or classifications\n- different cleansing rules can lead to different results\n- impact analysis is especially difficult for NNs and DNNs\n\n## Resilient Data Cleansing\n\nThe lecture argues that cleansing itself must be robust and traceable. **Resilient data cleansing** therefore includes:\n\n- critical evaluation of the chosen cleansing strategy\n- monitoring which records were dropped or changed\n- **re-doability** of the cleansing step\n- **un-doability** of cleansing decisions\n- impact analysis for cleansing actions\n- quality measures for judging the effect of cleansing\n\nThe proposed direction is strong logging and traceability, for example audit-and-control style logging, so that it is always clear which data was processed, when, by which step, and with which effect.\n\n## Exam Formula\n\nData cleansing is necessary because raw data is often not directly usable, but cleansing can strongly influence later results. Therefore, resilient data cleansing requires transparent strategies, logging, reversibility, and impact analysis.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "INFO_ITG_Kieseberg.pdf",
+          "pages_raw": "161-166"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 50,
+      "courses": [
+        "PP"
+      ],
+      "question": "Provide 6 typical roles (except visitors/author) in an academic conference and describe their tasks.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "PP - 20250526 - Conferences and Editorships.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 51,
+      "courses": [
+        "PP",
+        "PM1"
+      ],
+      "question": "Explain the steps in the typical review process. What type of review strategies do you know?",
+      "answer_markdown": "A typical review process starts before the paper is actually read in detail. First, the chairs define topics in the system, reviewers select topics, and conflicts of interest are considered. Then papers are submitted, reviewers may bid on papers, and the papers are assigned, usually to at least three reviewers.\n\n## Typical Review Process\n\n1. **Topic setup and reviewer matching:** PC chairs enter topics, reviewers select topics, and conflicts of interest are declared.\n2. **Submission and bidding:** papers are submitted and reviewers can often bid on papers they want, cannot, or must not review.\n3. **Paper assignment and deadlines:** the organisers assign papers and set deadlines.\n4. **Reviewing:** reviewers assess contribution, correctness, evaluation, presentation quality, and possible misconduct such as plagiarism.\n5. **Comments and discussion:** reviews are submitted, comments may be opened, and reviewers discuss shortcomings, often with a lead reviewer.\n6. **Decision:** the venue decides on rejection, acceptance, or sometimes revision; some conferences use **shepherding** for conditionally accepted papers.\n7. **Camera-ready:** accepted papers are revised into the final version.\n\nThe PM1 slides also stress a practical review method: read abstract and introduction first, identify the claimed contribution, compare it to the conclusion and the state of the art, then check claim by claim whether the paper actually delivers.\n\n## Review Strategies / Variants\n\n- **Single-blind review:** the reviewer knows the authors, but the authors do not know the reviewer.\n- **Double-blind review:** both sides are anonymized.\n- **Visible vs. restricted reviews:** reviews may be visible to all reviewers or only to those reviewing the same paper.\n- **Reviewer anonymity vs. known-to-reviewers:** reviewers may stay anonymous or be visible to the other reviewers.\n- **Commenting and discussion-based review:** reviewers can comment on each other's reviews and discuss weaknesses before the final decision.\n- **Shepherded acceptance:** a paper is accepted conditionally and improved under guidance before the camera-ready version.\n\n## Short Conclusion\n\nThe core pattern is assignment, review, discussion, and decision. The main strategy distinction in the cited slides is **single-blind vs. double-blind**, but the process can also vary through review visibility, reviewer discussion, and shepherding.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "PP - 20250526 - Conferences and Editorships.pdf",
+          "pages_raw": "9-11"
+        },
+        {
+          "file": "Reviewing papers for fun and profit.pdf",
+          "pages_raw": "11-12"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 52,
+      "courses": [
+        "PP"
+      ],
+      "question": "What is the motivation/achieved by the writing and publishing of academic papers?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "20250428_papers-theses.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 53,
+      "courses": [
+        "PP",
+        "GAIRI"
+      ],
+      "question": "Describe the common structure/chapters/sections of a thesis/paper! Describe briefly the expected content of each section/chapter!",
+      "answer_markdown": "There is no single universal structure for every thesis or paper, but the cited sources describe a common overall pattern. Papers usually compress it more strongly, while theses often expand it into full chapters.\n\n## Common Structure\n\n- **Abstract:** a short summary of the whole work, including topic, problem, approach, and main result.\n- **Introduction:** motivates the topic, explains the problem, defines the scope, and often states the contribution and structure of the document.\n- **Background / Preliminaries / Theoretical Background:** gives the concepts and prior knowledge needed to understand the work.\n- **Related Work / State of the Art / Literature Review:** shows what is already known, how existing approaches differ, and where the gap is.\n- **Methodology / Approach:** explains how the problem is tackled and why this method was chosen.\n- **Implementation / Prototype / Experimental Setup:** describes the concrete realization or technical setup when applicable.\n- **Results:** presents the findings, measurements, artefacts, or outputs of the work.\n- **Evaluation / Discussion:** interprets the results, checks whether the goals were reached, and discusses strengths, weaknesses, and limitations.\n- **Conclusion / Future Work:** summarizes the contribution and points to sensible next steps.\n- **References / Bibliography:** lists the cited sources in the required citation style.\n- **Appendix / Acknowledgements:** optional supporting material such as extra tables, questionnaires, code details, or thanks.\n\n## Exam Formula\n\nThe usual logic is: first explain the problem and prior work, then present the method and results, then discuss what they mean, and finally close with the conclusion and references.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "20250428_papers-theses.pdf",
+          "pages_raw": "18-48"
+        },
+        {
+          "file": "Thesis_Guideline.pdf",
+          "pages_raw": "1-17"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 54,
+      "courses": [
+        "PP"
+      ],
+      "question": "When describing facts or theories in your text, what is important for your readers?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "20250505_style-pres.pdf",
+          "pages_raw": ""
+        },
+        {
+          "file": "20250428_papers-theses.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 55,
+      "courses": [
+        "ITP"
+      ],
+      "question": "Asymmetric vs. symmetric cryptography: For what problems would you use which? Why? What are the advantages/disadvantages? What algorithms do you know?",
+      "answer_markdown": "Symmetric and asymmetric cryptography solve different problems.\n\n## Symmetric Cryptography\n\nSymmetric cryptography uses the **same secret key** for encryption and decryption.\n\n- Best use: encrypting **large amounts of data quickly**, for example files, disks, network traffic, audio, or video streams.\n- Advantage: very fast.\n- Advantage: keys are usually relatively short.\n- Disadvantage: the secret key must be exchanged securely in advance.\n- Disadvantage: in group communication the number of required shared keys grows quickly.\n- Disadvantage: it is **not suitable for digital signatures**.\n\nAlgorithms named in the cited slides include:\n\n- **AES**\n- **Triple DES / 3DES**\n\n## Asymmetric Cryptography\n\nAsymmetric cryptography uses a **public key** and a **private key**. One key is distributed publicly, while the private key stays secret.\n\n- Best use: **key exchange**, **digital signatures**, certificates, and communication where parties do not already share a secret.\n- Advantage: easy key distribution.\n- Advantage: fewer key pairs are needed.\n- Advantage: suitable for digital signatures.\n- Disadvantage: much slower than symmetric cryptography.\n- Disadvantage: longer keys are usually required.\n- Disadvantage: current methods in the slides are **not quantum-computer secure**.\n\nAlgorithms named in the cited slides include:\n\n- **RSA**\n- **ElGamal / DLIES**\n- **ECIES**\n- **DSA**\n- **ECDSA**\n- **DH / Diffie-Hellman**\n- **ECDH**\n\n## When To Use Which\n\n- Use **symmetric cryptography** for the actual protection of data, because it is efficient.\n- Use **asymmetric cryptography** when you need to distribute keys safely or create and verify digital signatures.\n\nIn practice, both are usually combined: asymmetric cryptography establishes or protects a session key, and symmetric cryptography encrypts the real data.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "02-Symmetric.pdf",
+          "pages_raw": "4, 6, 8"
+        },
+        {
+          "file": "03-Asymmetric.pdf",
+          "pages_raw": "5, 7-8"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 56,
+      "courses": [
+        "ITP"
+      ],
+      "question": "Cryptographic hash functions: What is a cryptographic hash function? Which ones do you know? What are the desired properties of hash functions? What is the avalanche property?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "04-HashDSig.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 57,
+      "courses": [
+        "ITP"
+      ],
+      "question": "Trusted Computing: Give the definition of a \"trusted system\"! What does it say about a system's security? How can trust in something be assessed? Compare to common social interactions.",
+      "answer_markdown": "Trust in computing is first of all an **expectation of behaviour**.\n\n## Definition\n\nA **trusted system** is a system that **behaves in the expected manner for a particular purpose**.\n\n## What This Says About Security\n\nThis does **not** automatically mean that the system is secure.\n\n- trust is about expected behaviour\n- security is about protection against threats and misuse\n- a system can be trusted to behave as expected and still be insecure\n- the slides also stress that trusted behaviour is not automatically morally good behaviour\n\n## How Trust Can Be Assessed\n\nAccording to the slides, trust can be assessed:\n\n- when something can be **unambiguously identified**\n- when it **operates unhindered**\n- through **first-hand experience** of consistent good behaviour\n- through **references** from already trusted parties\n- ultimately through trust in the people or organisations behind it\n\n## Comparison To Social Interactions\n\nThis is similar to normal social trust:\n\n- we trust a person when we know who they are\n- we trust them more after repeated reliable behaviour\n- we may also trust them because someone already trusted recommends them\n\nThe same pattern appears in computing: identification, repeated reliable behaviour, and trusted references all help create trust.\n\n## Exam Formula\n\nA trusted system is one that behaves as expected for a given purpose. That says something about predictability, but not automatically about security. Trust is assessed through identification, experience, and trusted references, just as in ordinary human relationships.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "20251021-trust.pdf",
+          "pages_raw": "26-28"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 58,
+      "courses": [
+        "ITP"
+      ],
+      "question": "Cloud: Name the three major cloud service models and which one do you choose for what? Advantages/disadvantages?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "20251021-cloud.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 59,
+      "courses": [
+        "ITP"
+      ],
+      "question": "Organisational Security: Identifying a user: Name and explain three ways of identifying a user. Give examples for each.",
+      "answer_markdown": "There are three classic ways of identifying or authenticating a user.\n\n- **Something the user knows** (`what you know`): the user proves identity by knowing secret information. Examples: password, PIN, graphical password, secret question.\n- **Something the user is** (`what you are`): the user is identified by biometric characteristics. Examples: fingerprint, face recognition, iris scan, voice.\n- **Something the user has** (`what you have`): the user proves identity by possessing a specific object or token. Examples: chip card, RFID transponder, passport, USB token, OTP device or authenticator app.\n\nThese factors are often combined in **multi-factor authentication**, for example a bank card plus PIN, or a password plus fingerprint.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "20251103-OrgSecurity.pdf",
+          "pages_raw": "12-15"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 60,
+      "courses": [
+        "WRP"
+      ],
+      "question": "Name and explain the four main sources for research funding from the lecture. What are their characteristics?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Writing of Research Proposals.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 61,
+      "courses": [
+        "WRP"
+      ],
+      "question": "Describe the related work section in a funding proposal. What are the differences to an academic literature review?",
+      "answer_markdown": "In a funding proposal, the related work or **state-of-the-art** section is short, selective, and strongly purpose-driven. Its job is not completeness, but to show that the proposed project is **new, needed, and well positioned**.\n\n## In A Funding Proposal\n\n- usually only **2-3 pages**\n- short and precise\n- reduced to the actually important parts\n- structured along the proposal itself, for example objectives, deliverables, or sub-targets\n- meant to show the **gap** the proposal will solve\n- often focused mainly on academic work, although industrial or NGO work can also matter\n\n## Difference To An Academic Literature Review\n\n- A proposal SotA is **selective**; an academic literature review aims to be **comprehensive**.\n- A proposal SotA argues **why the approach is new and needed**; a literature review maps and compares the field more broadly.\n- A proposal SotA follows the logic of the proposal; a literature review is structured around systematic comparison of approaches.\n- A proposal SotA is short; a literature review can be extensive.\n- A proposal SotA often spans several related fields if needed for the proposal; a literature review usually focuses more clearly on one field.\n\n## Exam Formula\n\nThe related work section in a funding proposal is a short, targeted state-of-the-art overview that shows why the project is novel and necessary. An academic literature review is much more comprehensive and mainly aims to compare and organise the state of research in a field.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Writing of Research Proposals.pdf",
+          "pages_raw": "48-49"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 62,
+      "courses": [
+        "WRP"
+      ],
+      "question": "Name and explain the 5 key questions the \"story\" of a project needs to answer. What are important steps in the story development?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Writing of Research Proposals.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 63,
+      "courses": [
+        "WRP"
+      ],
+      "question": "Name the 5 cost types in a typical research project. Give an example on how to calculate personal costs in a typical research project.",
+      "answer_markdown": "Typical research projects distinguish **5 cost types**:\n\n- **Personal**\n- **Travel costs / open access fees**\n- **Third party costs**\n- **Acquisition**\n- **Overhead** (`AFA`)\n\n## Example: Personal Cost Calculation\n\nThe cited slide gives the usual formula:\n\n`(Annual wage) * Overhead / Divider`\n\nTypical values from the lecture are:\n\n- **Divider:** `1720 h/year`\n- **Overhead:** usually `20-25%`\n\nExample with an annual wage of `EUR 60,000` and an overhead factor of `1.25`:\n\n`(60,000 * 1.25) / 1720 = 43.60 EUR/h`\n\nIf that person works `100` project hours, the personal cost is:\n\n`43.60 * 100 = 4,360 EUR`\n\nThe slide also notes that in practice the **real hourly rates** must finally be calculated.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Writing of Research Proposals.pdf",
+          "pages_raw": "50, 53"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 64,
+      "courses": [
+        "WRP"
+      ],
+      "question": "Name 5 structural elements of research proposals as discussed in the lecture. What is the typical structure of a workpackage?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Writing of Research Proposals.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 65,
+      "courses": [
+        "WRP"
+      ],
+      "question": "When developing research projects, how do you define measurements and risks?",
+      "answer_markdown": "When developing a research project, **measurements** and **risks** should both be derived from the actual project structure. They should not be generic add-ons.\n\n## Measurements\n\nMeasurements should be defined from the **targets** and expected **results** of the project.\n\n- Start from the main target and sub-targets / research questions.\n- Ask what observable evidence would show that these targets were reached.\n- Use measurements that fit the actual project knowledge and the data that will realistically be available.\n- Keep them understandable and convincing for reviewers.\n- In practice, they can be tied to an **impact-chain** or to concrete project elements such as workpackages, deliverables, milestones, or results.\n\nSo a short exam answer is: measurements should be **goal-oriented, data-based, and reviewer-acceptable**.\n\n## Risks\n\nRisks are a normal part of a proposal and should be defined in a **project-specific** way.\n\n- Do not list generic risks that would fit any project.\n- Define risks in relation to the concrete work, methods, partners, or expected results.\n- Place them either:\n  - directly at the **workpackage level**, or\n  - in an overarching **novelty / risk** section.\n- Each risk should be linked to suitable **countermeasures / mitigation**.\n\nThe proposal should stay concise: the slides explicitly treat risks as a proposal element, but also warn against including an overly **fine-tuned risk analysis**.\n\n## Exam Formula\n\nMeasurements show whether the project targets are being reached, so they should be derived from the goals, expected results, and available evidence. Risks should be project-specific and can be placed either per workpackage or in a dedicated risk section, always together with countermeasures.\n\n> Source note: the current cited pages directly support the **risk** half of the answer. The **measurement / KPI** half is only indirectly supported by the same WRP deck's target / impact-chain logic, so the source metadata is slightly incomplete for that part.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "Writing of Research Proposals.pdf",
+          "pages_raw": "28, 37, 47"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 66,
+      "courses": [
+        "MRI",
+        "PM1"
+      ],
+      "question": "For literature research, name and describe the five key requirements for sources. What is the reproducibility crisis?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Part1_Literature_research.pdf",
+          "pages_raw": ""
+        },
+        {
+          "file": "PM1 - 20241111 - Literature Research 2.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 67,
+      "courses": [
+        "PM2"
+      ],
+      "question": "Describe the term \"project specification\" and its typical two major parts. What is a change request?",
+      "answer_markdown": "A **project specification** is a structured document that defines the project. It describes the objectives, scope, deliverables, requirements, and timeline, and acts as a common blueprint for everyone involved.\n\nIt is often divided into **two major parts**:\n\n- **Requirements specification:** the **customer point of view**. It explains why the system is needed and what problem it is meant to solve.\n- **Technical specification:** the **supplier point of view**. It describes the system from the supplier side and specifies what the system must do.\n\nA **change request** is the formalization of an agreed change to the specification. It always refers to an existing specification and possibly previous change requests, so it requires numbering or versioning. If the change is large enough, it should lead to a new version of the specification.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "PM2 - 20250408.pdf",
+          "pages_raw": "8, 15"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 68,
+      "courses": [
+        "PM2"
+      ],
+      "question": "Name and describe the typical contents of a requirements specification.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "PM2 - 20250408.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 69,
+      "courses": [
+        "PM2"
+      ],
+      "question": "Name and describe the typical contents of a technical specification.",
+      "answer_markdown": "Typical contents of a **technical specification** are:\n\n- **Introduction / objective:** states what is to be achieved.\n- **People involved / roles:** identifies who is responsible and who is involved.\n- **Initial situation:** describes the current status, existing systems, and known problems.\n- **Detailed requirements:** includes both **functional requirements** (what the system should do) and **non-functional requirements** (for example performance or security).\n- **System architecture / technical framework conditions:** explains the technical environment and structure.\n- **Data flows and processes:** describes workflows, data structures, and diagrams.\n- **Test concept / acceptance criteria:** explains how correctness is checked and when the result is accepted.\n- **Project planning (optional):** may include milestones, responsibilities, and time frame.\n- **Glossary and appendices:** define terms and include references or additional documents.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "PM2 - 20250408.pdf",
+          "pages_raw": "10"
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 70,
+      "courses": [
+        "WRP"
+      ],
+      "question": "Why are one-pagers relevant? What should they contain? What should not be in a one-pager in general?",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "Writing of Research Proposals.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 71,
+      "courses": [
+        "PP"
+      ],
+      "question": "Name and explain 4 different types and venues for non-academic publishing.",
+      "answer_markdown": "Non-academic publishing means communicating results **outside peer-reviewed academic papers**, usually for **practitioners, customers, industry partners, or the general public**.\n\nTypical examples are:\n\n- **Industry white papers:** structured documents published by a company or organisation, usually on a **company website, download portal, or as customer material**. They explain a technology, method, or solution in a practical and often persuasive way.\n- **Trade magazines / professional journals:** articles published in **industry magazines or association journals**. They target practitioners and focus on trends, case studies, best practices, and practical relevance rather than academic novelty.\n- **Blog posts / company tech blogs:** shorter online texts published on **company blogs, engineering blogs, or developer portals**. They are useful for quickly sharing experiences, implementation insights, lessons learned, and opinions with a broad audience.\n- **Conference talks at industry events:** presentations given at **industry conferences, trade fairs, vendor events, or meetups**. They are a venue for sharing applied results directly with professionals, customers, and partners.\n\nOther possible non-academic formats mentioned in this context are **newspaper articles, podcasts, patents, and standards**.",
+      "answer_is_empty": false,
+      "sources": [
+        {
+          "file": "20250428_papers-theses.pdf",
+          "pages_raw": ""
+        },
+        {
+          "file": "20250526 Conferences and Editorships.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    },
+    {
+      "qid": 72,
+      "courses": [
+        "PM3"
+      ],
+      "question": "Explain the following terms: Random experiment, target variable, influencing variable and confounding factors.",
+      "answer_markdown": "",
+      "answer_is_empty": true,
+      "sources": [
+        {
+          "file": "PROM_PM3_20251020 - Design of Experiments.pdf",
+          "pages_raw": ""
+        }
+      ],
+      "images": []
+    }
+  ]
+}

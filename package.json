@@ -1,0 +1,10 @@
+{
+  "name": "master-questions",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export": "exporter/node_modules/.bin/tsx exporter/src/index.ts",
+    "typecheck": "exporter/node_modules/.bin/tsc --noEmit -p exporter"
+  }
+}

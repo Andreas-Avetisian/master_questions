@@ -1,0 +1,18 @@
+services:
+  pocketbase:
+    image: ghcr.io/muchobien/pocketbase:0.23
+    container_name: mq-pocketbase
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./.pocketbase-data:/pb_data
+      - ./pocketbase/pb_migrations:/pb_migrations:ro
+      - ./pocketbase/pb_hooks:/pb_hooks:ro
+    environment:
+      - TZ=Europe/Vienna
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8090/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

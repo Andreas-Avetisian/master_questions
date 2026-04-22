@@ -3,5 +3,6 @@ exporter/node_modules/
 web/node_modules/
 web/.svelte-kit/
 web/build/
+.pocketbase-data/
 *.log
 .DS_Store

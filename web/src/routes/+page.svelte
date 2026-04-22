@@ -2,7 +2,7 @@
   import { base } from "$app/paths";
   import { onMount } from "svelte";
   import { loadQuestions } from "$lib/data";
-  import { getProgressStore } from "$lib/progress/local";
+  import { getProgressStore } from "$lib/progress/factory";
   import { buildQueue } from "$lib/queue";
   import type { Question } from "$lib/types";
 

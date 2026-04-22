@@ -169,6 +169,7 @@ button[disabled] { opacity: 0.5; cursor: not-allowed; }
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.85em;
   background: var(--code-bg);
+  color: var(--fg);
   padding: 0.1em 0.4em;
   border-radius: 4px;
   border: 1px solid var(--border);

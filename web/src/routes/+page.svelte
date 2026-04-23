@@ -2,7 +2,7 @@
   import { base } from "$app/paths";
   import { onMount } from "svelte";
   import { loadQuestions } from "$lib/data";
-  import { getProgressStore } from "$lib/progress/factory";
+  import { getProgressStore, onStoreChange } from "$lib/progress/factory";
   import { buildQueue } from "$lib/queue";
   import type { Question } from "$lib/types";
 
@@ -13,7 +13,7 @@
   let newToday = $state(0);
   let reviewedEver = $state(0);
 
-  onMount(async () => {
+  async function refresh() {
     const { questions } = await loadQuestions();
     totalQuestions = questions.length;
     answered = (questions as Question[]).filter((q) => !q.answer_is_empty).length;
@@ -28,6 +28,16 @@
     });
     dueCount = q.due.length;
     newToday = q.newCards.length;
+  }
+
+  onMount(() => {
+    refresh();
+    const unsubProgress = getProgressStore().subscribe(refresh);
+    const unsubStore = onStoreChange(refresh);
+    return () => {
+      unsubProgress();
+      unsubStore();
+    };
   });
 </script>
 

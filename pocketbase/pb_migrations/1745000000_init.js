@@ -40,10 +40,14 @@ migrate(
           maxSelect: 1,
         },
         { name: "qid", type: "number", required: true, min: 1, onlyInt: true },
-        { name: "ease", type: "number", required: true },
-        { name: "interval_days", type: "number", required: true, min: 0 },
-        { name: "repetitions", type: "number", required: true, min: 0, onlyInt: true },
-        { name: "lapses", type: "number", required: true, min: 0, onlyInt: true },
+        // PB treats `required: true` on a number field as "non-zero",
+        // so lapses=0 / repetitions=0 / interval_days=0 are legal SRS
+        // states that would get rejected. Leave them optional; the app
+        // always sends them anyway.
+        { name: "ease", type: "number" },
+        { name: "interval_days", type: "number", min: 0 },
+        { name: "repetitions", type: "number", min: 0, onlyInt: true },
+        { name: "lapses", type: "number", min: 0, onlyInt: true },
         { name: "last_reviewed_at", type: "date" },
         { name: "next_review_at", type: "date" },
         { name: "suspended", type: "bool" },

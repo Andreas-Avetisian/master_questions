@@ -1,5 +1,6 @@
 import { browser } from "$app/environment";
 import { pb } from "../pb";
+import { syncTracker } from "../sync";
 import type { ProgressStore } from "./types";
 import { LocalStorageProgressStore } from "./local";
 import { PocketBaseProgressStore } from "./pocketbase";
@@ -27,6 +28,7 @@ export function getProgressStore(): ProgressStore {
 
   if (userId) {
     if (userId !== lastUserId || !hybrid) {
+      hybrid?.dispose();
       hybrid = new HybridProgressStore(
         getLocal(),
         new PocketBaseProgressStore(),
@@ -42,8 +44,10 @@ export function getProgressStore(): ProgressStore {
     // next login will merge). We intentionally do NOT wipe local to give the
     // user a chance to log back in and sync — they can clear localStorage
     // manually if they want a fresh start.
+    hybrid?.dispose();
     hybrid = null;
     lastUserId = null;
+    syncTracker.reset();
   }
   return getLocal();
 }
@@ -56,7 +60,9 @@ export function onStoreChange(fn: () => void): () => void {
 /** Called by the layout when the authStore fires onChange. */
 export function notifyStoreSwap(): void {
   // Drop both references so the next getProgressStore() rebuilds.
+  hybrid?.dispose();
   hybrid = null;
   lastUserId = pb().authStore.record?.id ?? null;
+  syncTracker.reset();
   for (const l of storeListeners) l();
 }

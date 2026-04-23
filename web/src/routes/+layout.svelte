@@ -7,12 +7,14 @@
   import { getProgressStore, onStoreChange, notifyStoreSwap } from "$lib/progress/factory";
   import { authState } from "$lib/auth";
   import { buildQueue } from "$lib/queue";
+  import { onSyncStateChange, type SyncState } from "$lib/sync";
   import type { Question } from "$lib/types";
 
   let { children } = $props();
 
   let dueCount = $state<number | null>(null);
   let userEmail = $state<string | null>(null);
+  let syncState = $state<SyncState>({ kind: "idle" });
 
   async function refresh() {
     const [{ questions }, progress] = await Promise.all([
@@ -35,10 +37,12 @@
     });
     const unsubStore = onStoreChange(() => refresh());
     const unsubProgress = getProgressStore().subscribe(() => refresh());
+    const unsubSync = onSyncStateChange((s) => (syncState = s));
     return () => {
       unsubAuth();
       unsubStore();
       unsubProgress();
+      unsubSync();
     };
   });
 
@@ -81,6 +85,18 @@
 </main>
 
 <footer class="site-footer">
+  {#if userEmail}
+    <span class="sync sync-{syncState.kind}" title={syncState.kind === "error" ? syncState.message : ""}>
+      {#if syncState.kind === "syncing"}
+        <span class="sync-dot" aria-hidden="true"></span>syncing…
+      {:else if syncState.kind === "error"}
+        <span class="sync-dot" aria-hidden="true"></span>sync failed
+      {:else}
+        <span class="sync-dot" aria-hidden="true"></span>synced
+      {/if}
+    </span>
+    <span class="sep">·</span>
+  {/if}
   {#if commitUrl}
     build <a href={commitUrl} target="_blank" rel="noopener"><code>{commitShort}</code></a>
   {:else}

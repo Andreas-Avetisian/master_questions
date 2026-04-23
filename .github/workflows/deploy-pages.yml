@@ -42,6 +42,7 @@ jobs:
         env:
           # Custom domain, no subpath.
           BASE_PATH: ""
+          VITE_COMMIT_SHA: ${{ github.sha }}
 
       - name: SPA fallback + CNAME
         run: |

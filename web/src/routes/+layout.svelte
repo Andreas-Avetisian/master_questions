@@ -46,10 +46,20 @@
     await authState().logout();
     // authStore.onChange fires → notifyStoreSwap → refresh
   }
+
+  const commitSha = import.meta.env.VITE_COMMIT_SHA ?? "dev";
+  const commitShort = commitSha.slice(0, 7);
+  const commitUrl =
+    commitSha === "dev"
+      ? null
+      : `https://github.com/Andreas-Avetisian/master_questions/commit/${commitSha}`;
 </script>
 
 <nav class="nav">
-  <a href="{base}/" aria-current={page.url.pathname === `${base}/` ? "page" : undefined}>Master Questions</a>
+  <a class="brand" href="{base}/" aria-current={page.url.pathname === `${base}/` ? "page" : undefined}>
+    <span class="brand-long">Master Questions</span>
+    <span class="brand-short" aria-hidden="true">MQ</span>
+  </a>
   <a href="{base}/review" aria-current={page.url.pathname.startsWith(`${base}/review`) ? "page" : undefined}>
     Review
     {#if dueCount !== null && dueCount > 0}
@@ -59,7 +69,7 @@
   <a href="{base}/browse" aria-current={page.url.pathname.startsWith(`${base}/browse`) ? "page" : undefined}>Browse</a>
   <span class="spacer"></span>
   {#if userEmail}
-    <a href="{base}/account" title={userEmail}>{userEmail}</a>
+    <a class="nav-email" href="{base}/account" title={userEmail}>{userEmail}</a>
     <button onclick={handleLogout} style="font-size:0.9em;">Sign out</button>
   {:else}
     <a href="{base}/login" aria-current={page.url.pathname.startsWith(`${base}/login`) ? "page" : undefined}>Sign in</a>
@@ -69,3 +79,11 @@
 <main class="container">
   {@render children()}
 </main>
+
+<footer class="site-footer">
+  {#if commitUrl}
+    build <a href={commitUrl} target="_blank" rel="noopener"><code>{commitShort}</code></a>
+  {:else}
+    build <code>{commitShort}</code>
+  {/if}
+</footer>

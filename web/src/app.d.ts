@@ -9,4 +9,13 @@ declare global {
   }
 }
 
+interface ImportMetaEnv {
+  readonly VITE_PB_URL?: string;
+  readonly VITE_COMMIT_SHA?: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
+
 export {};

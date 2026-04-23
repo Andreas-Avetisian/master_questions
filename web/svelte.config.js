@@ -15,6 +15,11 @@ const config = {
     paths: {
       base: process.env.BASE_PATH ?? "",
     },
+    // Version name flows into `$service-worker`'s `version` export and the
+    // SW uses it as its cache key, so a new deploy invalidates old caches.
+    version: {
+      name: process.env.VITE_COMMIT_SHA ?? `dev-${Date.now()}`,
+    },
   },
 };
 

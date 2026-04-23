@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Master Questions">
+  <!-- Full-bleed background so the OS mask never exposes the page behind it. -->
+  <rect width="512" height="512" fill="#2563eb"/>
+  <!-- Glyph sits inside the 80% safe zone (256 ± 204). -->
+  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
+        font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif"
+        font-weight="700" font-size="180" fill="#ffffff" letter-spacing="-8">MQ</text>
+</svg>

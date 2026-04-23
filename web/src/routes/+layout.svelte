@@ -15,6 +15,8 @@
   let dueCount = $state<number | null>(null);
   let userEmail = $state<string | null>(null);
   let syncState = $state<SyncState>({ kind: "idle" });
+  let updateReady = $state(false);
+  let waitingWorker: ServiceWorker | null = null;
 
   async function refresh() {
     const [{ questions }, progress] = await Promise.all([
@@ -38,6 +40,7 @@
     const unsubStore = onStoreChange(() => refresh());
     const unsubProgress = getProgressStore().subscribe(() => refresh());
     const unsubSync = onSyncStateChange((s) => (syncState = s));
+    registerServiceWorker();
     return () => {
       unsubAuth();
       unsubStore();
@@ -45,6 +48,39 @@
       unsubSync();
     };
   });
+
+  function registerServiceWorker() {
+    if (!("serviceWorker" in navigator)) return;
+    navigator.serviceWorker.ready.then((reg) => {
+      // If a newer worker is already waiting at load time, surface it.
+      if (reg.waiting) markWaiting(reg.waiting);
+      reg.addEventListener("updatefound", () => {
+        const nw = reg.installing;
+        if (!nw) return;
+        nw.addEventListener("statechange", () => {
+          if (nw.state === "installed" && navigator.serviceWorker.controller) {
+            markWaiting(nw);
+          }
+        });
+      });
+    });
+    // When the new worker takes over, reload so the page runs against it.
+    let reloading = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (reloading) return;
+      reloading = true;
+      location.reload();
+    });
+  }
+
+  function markWaiting(w: ServiceWorker) {
+    waitingWorker = w;
+    updateReady = true;
+  }
+
+  function applyUpdate() {
+    waitingWorker?.postMessage({ type: "SKIP_WAITING" });
+  }
 
   async function handleLogout() {
     await authState().logout();
@@ -58,6 +94,13 @@
       ? null
       : `https://github.com/Andreas-Avetisian/master_questions/commit/${commitSha}`;
 </script>
+
+{#if updateReady}
+  <div class="update-banner" role="status">
+    <span>A new version is available.</span>
+    <button onclick={applyUpdate}>Reload</button>
+  </div>
+{/if}
 
 <nav class="nav">
   <a class="brand" href="{base}/" aria-current={page.url.pathname === `${base}/` ? "page" : undefined}>

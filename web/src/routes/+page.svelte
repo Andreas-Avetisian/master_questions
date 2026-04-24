@@ -4,6 +4,8 @@
   import { loadQuestions } from "$lib/data";
   import { getProgressStore, onStoreChange } from "$lib/progress/factory";
   import { buildQueue } from "$lib/queue";
+  import { getDailyCounts, onDailyChange } from "$lib/daily";
+  import { getSettings, onSettingsChange } from "$lib/settings";
   import type { Question } from "$lib/types";
 
   let totalQuestions = $state(0);
@@ -12,6 +14,10 @@
   let dueCount = $state(0);
   let newToday = $state(0);
   let reviewedEver = $state(0);
+  let introducedToday = $state(0);
+  let reviewedToday = $state(0);
+  let newPerDay = $state(0);
+  let reviewsPerDay = $state(0);
 
   async function refresh() {
     const { questions } = await loadQuestions();
@@ -22,9 +28,20 @@
     const progress = await getProgressStore().all();
     reviewedEver = Object.keys(progress).length;
 
+    const counts = getDailyCounts();
+    introducedToday = counts.introducedToday;
+    reviewedToday = counts.reviewedToday;
+
+    const s = getSettings();
+    newPerDay = s.newPerDay;
+    reviewsPerDay = s.reviewsPerDay;
+
     const q = buildQueue(questions as Question[], progress, {
       now: new Date(),
-      newPerDay: 10,
+      newPerDay,
+      reviewsPerDay,
+      introducedToday,
+      reviewedToday,
     });
     dueCount = q.due.length;
     newToday = q.newCards.length;
@@ -34,9 +51,13 @@
     refresh();
     const unsubProgress = getProgressStore().subscribe(refresh);
     const unsubStore = onStoreChange(refresh);
+    const unsubDaily = onDailyChange(refresh);
+    const unsubSettings = onSettingsChange(refresh);
     return () => {
       unsubProgress();
       unsubStore();
+      unsubDaily();
+      unsubSettings();
     };
   });
 </script>
@@ -48,6 +69,9 @@
   <h2 style="margin-top:0">Today</h2>
   <p style="font-size:1.2rem; margin:0.5em 0;">
     <strong>{dueCount}</strong> due, <strong>{newToday}</strong> new
+  </p>
+  <p class="muted" style="font-size:0.85rem; margin:0.25em 0;">
+    Today: {introducedToday}/{newPerDay} new · {reviewedToday}/{reviewsPerDay} reviews
   </p>
   {#if dueCount + newToday > 0}
     <p><a href="{base}/review"><button style="background: var(--accent); color: var(--accent-fg); border-color: var(--accent);">Start review →</button></a></p>

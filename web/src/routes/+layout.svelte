@@ -7,6 +7,8 @@
   import { getProgressStore, onStoreChange, notifyStoreSwap } from "$lib/progress/factory";
   import { authState } from "$lib/auth";
   import { buildQueue } from "$lib/queue";
+  import { getDailyCounts, onDailyChange } from "$lib/daily";
+  import { getSettings, onSettingsChange } from "$lib/settings";
   import { onSyncStateChange, type SyncState } from "$lib/sync";
   import type { Question } from "$lib/types";
 
@@ -23,9 +25,14 @@
       loadQuestions(),
       getProgressStore().all(),
     ]);
+    const { introducedToday, reviewedToday } = getDailyCounts();
+    const { newPerDay, reviewsPerDay } = getSettings();
     const bucket = buildQueue(questions as Question[], progress, {
       now: new Date(),
-      newPerDay: 10,
+      newPerDay,
+      reviewsPerDay,
+      introducedToday,
+      reviewedToday,
     });
     dueCount = bucket.total;
   }
@@ -39,12 +46,16 @@
     });
     const unsubStore = onStoreChange(() => refresh());
     const unsubProgress = getProgressStore().subscribe(() => refresh());
+    const unsubDaily = onDailyChange(() => refresh());
+    const unsubSettings = onSettingsChange(() => refresh());
     const unsubSync = onSyncStateChange((s) => (syncState = s));
     registerServiceWorker();
     return () => {
       unsubAuth();
       unsubStore();
       unsubProgress();
+      unsubDaily();
+      unsubSettings();
       unsubSync();
     };
   });
@@ -114,6 +125,7 @@
     {/if}
   </a>
   <a href="{base}/browse" aria-current={page.url.pathname.startsWith(`${base}/browse`) ? "page" : undefined}>Browse</a>
+  <a href="{base}/settings" aria-current={page.url.pathname.startsWith(`${base}/settings`) ? "page" : undefined}>Settings</a>
   <span class="spacer"></span>
   {#if userEmail}
     <a class="nav-email" href="{base}/account" title={userEmail}>{userEmail}</a>

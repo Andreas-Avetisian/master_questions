@@ -4,6 +4,8 @@
   import { loadQuestions } from "$lib/data";
   import { getProgressStore } from "$lib/progress/factory";
   import { buildQueue } from "$lib/queue";
+  import { bumpIntroduced, bumpReviewed, getDailyCounts } from "$lib/daily";
+  import { getSettings } from "$lib/settings";
   import { schedule, type Grade } from "$lib/srs";
   import type { Question } from "$lib/types";
   import QuestionCard from "$lib/ui/QuestionCard.svelte";
@@ -22,9 +24,14 @@
       loadQuestions(),
       getProgressStore().all(),
     ]);
+    const { introducedToday, reviewedToday } = getDailyCounts();
+    const { newPerDay, reviewsPerDay } = getSettings();
     const q = buildQueue(questions as Question[], progress, {
       now: new Date(),
-      newPerDay: 10,
+      newPerDay,
+      reviewsPerDay,
+      introducedToday,
+      reviewedToday,
     });
     queue = [...q.due, ...q.newCards];
     index = 0;
@@ -38,6 +45,8 @@
     const prev = await store.get(current.qid);
     const updated = schedule(prev, g, new Date(), current.qid);
     await store.put(updated);
+    if (prev === null) bumpIntroduced();
+    else bumpReviewed();
     sessionGraded++;
     index++;
     revealed = false;

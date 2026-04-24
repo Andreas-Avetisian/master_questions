@@ -4,12 +4,19 @@ import { isDue } from "./srs";
 
 export type QueueOptions = {
   now: Date;
+  /** Daily budget for first-time introductions (inflow). */
   newPerDay: number;
+  /** Daily budget for due-card reviews (outflow). */
+  reviewsPerDay: number;
+  /** How many fresh cards have already been introduced today. */
+  introducedToday: number;
+  /** How many due cards have already been reviewed today. */
+  reviewedToday: number;
 };
 
 export type QueueBuckets = {
   due: Question[]; // reviewed previously, next_review_at <= now
-  newCards: Question[]; // never reviewed, up to newPerDay
+  newCards: Question[]; // never reviewed, up to remaining new budget
   total: number;
 };
 
@@ -18,7 +25,9 @@ export type QueueBuckets = {
  *
  * - Skips questions with `answer_is_empty: true` (nothing to recall).
  * - Dues come first, sorted ascending by next_review_at (or qid for stability).
- * - Then up to `newPerDay` never-reviewed cards by ascending qid.
+ * - Then up to `newPerDay - introducedToday` never-reviewed cards by qid.
+ * - Dues are capped at `reviewsPerDay - reviewedToday` so a backlog doesn't
+ *   drown the user on any single day.
  */
 export function buildQueue(
   questions: Question[],
@@ -46,11 +55,14 @@ export function buildQueue(
   });
   newCards.sort((a, b) => a.qid - b.qid);
 
-  const cappedNew = newCards.slice(0, Math.max(0, opts.newPerDay));
+  const remainingNew = Math.max(0, opts.newPerDay - opts.introducedToday);
+  const remainingReviews = Math.max(0, opts.reviewsPerDay - opts.reviewedToday);
+  const cappedDue = due.slice(0, remainingReviews);
+  const cappedNew = newCards.slice(0, remainingNew);
 
   return {
-    due,
+    due: cappedDue,
     newCards: cappedNew,
-    total: due.length + cappedNew.length,
+    total: cappedDue.length + cappedNew.length,
   };
 }

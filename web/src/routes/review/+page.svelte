@@ -8,6 +8,7 @@
   import { getSettings } from "$lib/settings";
   import { schedule, type Grade } from "$lib/srs";
   import type { Question } from "$lib/types";
+  import Confetti from "$lib/ui/Confetti.svelte";
   import QuestionCard from "$lib/ui/QuestionCard.svelte";
   import GradeBar from "$lib/ui/GradeBar.svelte";
 
@@ -16,6 +17,7 @@
   let revealed = $state(false);
   let ready = $state(false);
   let sessionGraded = $state(0);
+  let celebrating = $state(false);
 
   const current = $derived(queue[index]);
 
@@ -41,6 +43,7 @@
 
   async function grade(g: Grade) {
     if (!current || !revealed) return;
+    const finishedDailyQueue = index >= queue.length - 1;
     const store = getProgressStore();
     const prev = await store.get(current.qid);
     const updated = schedule(prev, g, new Date(), current.qid);
@@ -50,6 +53,7 @@
     sessionGraded++;
     index++;
     revealed = false;
+    if (finishedDailyQueue) celebrating = true;
   }
 
   function onKey(e: KeyboardEvent) {
@@ -79,6 +83,10 @@
 </script>
 
 <h1>Review</h1>
+
+{#if celebrating}
+  <Confetti onDone={() => (celebrating = false)} />
+{/if}
 
 {#if !ready}
   <p class="muted">Loading…</p>

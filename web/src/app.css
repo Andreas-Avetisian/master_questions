@@ -177,6 +177,10 @@ button[disabled] { opacity: 0.5; cursor: not-allowed; }
   background: var(--warn);
   color: white;
 }
+.review-badge {
+  background: var(--accent);
+  color: var(--accent-fg);
+}
 
 .grade-bar {
   display: grid;

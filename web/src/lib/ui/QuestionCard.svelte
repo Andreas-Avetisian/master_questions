@@ -3,7 +3,11 @@
   import SourceList from "./SourceList.svelte";
   import { renderMarkdown } from "$lib/markdown";
 
-  let { question, revealed }: { question: Question; revealed: boolean } = $props();
+  let {
+    question,
+    revealed,
+    reviewBadge,
+  }: { question: Question; revealed: boolean; reviewBadge?: string } = $props();
 
   let renderedAnswer = $derived(
     question.answer_is_empty ? "" : renderMarkdown(question.answer_markdown),
@@ -13,6 +17,9 @@
 <article class="card">
   <div class="muted" style="font-size:0.85em;">
     #{question.qid}
+    {#if reviewBadge}
+      <span class="badge-pill review-badge">{reviewBadge}</span>
+    {/if}
     {#each question.courses as c}
       <span class="badge-pill">{c}</span>
     {/each}

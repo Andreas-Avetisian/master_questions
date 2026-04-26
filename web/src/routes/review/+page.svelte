@@ -93,6 +93,7 @@
 {:else if !current}
   <div class="card">
     <p><strong>All done.</strong> {sessionGraded} cards reviewed this session.</p>
+    <p class="muted">Nice work. Take a minute to drink some water 💧</p>
     <p><a href="{base}/">← Back to dashboard</a></p>
   </div>
 {:else}

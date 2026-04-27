@@ -67,12 +67,16 @@
 
 <div class="card">
   <h2 style="margin-top:0">Today</h2>
-  <p style="font-size:1.2rem; margin:0.5em 0;">
-    <strong>{dueCount}</strong> due, <strong>{newToday}</strong> new
-  </p>
-  <p class="muted" style="font-size:0.85rem; margin:0.25em 0;">
-    Today: {introducedToday}/{newPerDay} new · {reviewedToday}/{reviewsPerDay} reviews
-  </p>
+  <h3 style="margin:0.75em 0 0.25em; font-size:1rem;">Available to study now</h3>
+  <ul style="list-style:none; padding:0; margin:0;">
+    <li>Due review cards: <strong>{dueCount}</strong></li>
+    <li>New cards: <strong>{newToday}</strong></li>
+  </ul>
+  <h3 style="margin:0.9em 0 0.25em; font-size:1rem;">Today’s progress</h3>
+  <ul class="muted" style="list-style:none; padding:0; margin:0; font-size:0.9rem;">
+    <li>New cards studied: {introducedToday} / {newPerDay} daily limit</li>
+    <li>Review cards studied: {reviewedToday} / {reviewsPerDay} daily limit</li>
+  </ul>
   {#if dueCount + newToday > 0}
     <p><a href="{base}/review"><button style="background: var(--accent); color: var(--accent-fg); border-color: var(--accent);">Start review →</button></a></p>
   {:else}

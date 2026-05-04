@@ -6,3 +6,17 @@ web/build/
 .pocketbase-data/
 *.log
 .DS_Store
+
+# Source material (large lecture/exam PDFs)
+extracted/
+
+# Local agent state
+.opencode/
+.claude/
+
+# Claude session resume scripts
+resume.md
+
+# Python bytecode
+__pycache__/
+*.pyc

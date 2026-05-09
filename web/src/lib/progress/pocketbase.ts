@@ -61,25 +61,35 @@ export class PocketBaseProgressStore implements ProgressStore {
     const body = { ...p, user: this.userId };
     const existing = this.rowIdByQid.get(p.qid);
     if (existing) {
-      await pb().collection(COLLECTION).update(existing, body);
-    } else {
-      // Try create; if we raced ourselves (unique (user,qid)) fall back to update.
       try {
-        const row = await pb().collection(COLLECTION).create<Row>(body);
-        this.rowIdByQid.set(p.qid, row.id);
+        await pb().collection(COLLECTION).update(existing, body);
       } catch (e) {
-        if (isUniqueConflict(e)) {
-          const row = await pb()
-            .collection(COLLECTION)
-            .getFirstListItem<Row>(`user = "${this.userId}" && qid = ${p.qid}`);
-          this.rowIdByQid.set(row.qid, row.id);
-          await pb().collection(COLLECTION).update(row.id, body);
-        } else {
-          throw e;
-        }
+        if (!isNotFound(e)) throw e;
+        this.rowIdByQid.delete(p.qid);
+        await this.createOrUpdate(p, body);
       }
+    } else {
+      await this.createOrUpdate(p, body);
     }
     if (this.cache) this.cache[p.qid] = p;
+  }
+
+  private async createOrUpdate(
+    p: CardProgress,
+    body: CardProgress & { user: string },
+  ): Promise<void> {
+    // Try create; if the row exists already (unique (user,qid)) fall back to update.
+    try {
+      const row = await pb().collection(COLLECTION).create<Row>(body);
+      this.rowIdByQid.set(p.qid, row.id);
+    } catch (e) {
+      if (!isUniqueConflict(e)) throw e;
+      const row = await pb()
+        .collection(COLLECTION)
+        .getFirstListItem<Row>(`user = "${this.userId}" && qid = ${p.qid}`);
+      this.rowIdByQid.set(row.qid, row.id);
+      await pb().collection(COLLECTION).update(row.id, body);
+    }
   }
 
   /** Drop the in-memory cache so the next read hits the server. */

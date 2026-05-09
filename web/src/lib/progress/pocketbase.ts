@@ -123,8 +123,8 @@ function isNotFound(e: unknown): boolean {
   return (e as ClientResponseError)?.status === 404;
 }
 
-function isUniqueConflict(e: unknown): boolean {
+export function isUniqueConflict(e: unknown): boolean {
   // PocketBase returns 400 with a validation error on unique violations.
   const err = e as ClientResponseError;
-  return err?.status === 400 && /unique|already exists/i.test(err?.message ?? "");
+  return err?.status === 400 && /unique|already exists/i.test(JSON.stringify(err));
 }
